@@ -1,0 +1,10 @@
+fastapi>=0.115
+uvicorn[standard]>=0.34
+pydantic>=2.0
+python-dotenv>=1.0
+qdrant-client>=1.14
+sentence-transformers>=3.0
+httpx>=0.27
+tqdm
+bitsandbytes
+modal
