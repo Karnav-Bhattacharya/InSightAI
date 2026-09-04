@@ -1,4 +1,5 @@
-# InSightAI
+
+# InSightAI : https://voluble-manatee-ffa3b6.netlify.app
 
 **InSightAI** is a KPI-monitoring and root-cause-investigation prototype. It watches structured business metrics (sales, marketing spend), detects statistically *and* commercially material movements, cross-references those movements against unstructured business signals (support tickets, reviews, social mentions, internal chatter, news), generates ranked causal hypotheses using an LLM, and turns those hypotheses into concrete, evidence-grounded action recommendations — all surfaced to a manager through a card-based dashboard and a RAG chatbot.
 
