@@ -1,0 +1,2121 @@
+{
+  "metadata": {
+    "title": "InSightAI Role-Based Insight and RAG Knowledge",
+    "version": "2.0",
+    "source_file": "recommendation_output(5).json",
+    "generated_at": "2026-09-01T21:10:26.017891+00:00",
+    "model": "Qwen/Qwen3-4B",
+    "purpose": "Single JSON source for role-specific visual cards and RAG retrieval."
+  },
+  "grounding_rules": [
+    "Observed KPI changes, investigation summaries, hypotheses and original recommendations come from the recommendation output.",
+    "Investigation hypotheses are plausible explanations and must not be represented as proven causes.",
+    "Role-specific framing and role-specific actions are decision-context interpretations derived from the same evidence; they are not additional facts from the source."
+  ],
+  "shared_insights": [
+    {
+      "sourceMovementIndex": 0,
+      "region": "Delhi NCR",
+      "category": "Apparel",
+      "direction": "spike",
+      "period": {
+        "start": "2026-03-05",
+        "end": "2026-03-08"
+      },
+      "revenueDeviationPct": 38.7,
+      "summary": "A statistically significant sales spike occurred in Delhi NCR for Apparel between March 5-8, 2026, with units sold increasing by 30.4% and revenue by 32.5% compared to the baseline. Web traffic increased significantly, and promotions were active during this period. Marketing spend increased sharply, and there was a notable rise in paid sessions and conversions.",
+      "conclusion": "multiple_plausible_causes",
+      "confidence": null,
+      "topHypothesis": {
+        "rank": 1,
+        "hypothesis": "Sponsored campaigns drove increased sales",
+        "confidence": 0.7,
+        "supporting_evidence": [
+          "Marketing evidence shows a 21.1% increase in spend and 28.5% increase in impressions during the movement period.",
+          "Unstructured evidence indicates multiple mentions of sponsored campaigns and promotions influencing customer decisions.",
+          "Web traffic diagnostics show a 1.3x increase in sessions and 1.1x increase in product page views during the movement period.",
+          "Promotions diagnostics show promotion_active = 1.0 and discount_pct = 0.1137 during the movement period."
+        ],
+        "contradicting_evidence": [
+          "Competitor diagnostics show no active promotions during the movement period.",
+          "Inventory diagnostics show no significant changes in stock levels during the movement period."
+        ],
+        "missing_evidence": [
+          "Evidence linking specific sponsored campaigns to the sales spike."
+        ],
+        "next_check": "Review campaign performance reports for CAMP-GT011 and other relevant campaigns."
+      },
+      "hypotheses": [
+        {
+          "rank": 1,
+          "hypothesis": "Sponsored campaigns drove increased sales",
+          "confidence": 0.7,
+          "supporting_evidence": [
+            "Marketing evidence shows a 21.1% increase in spend and 28.5% increase in impressions during the movement period.",
+            "Unstructured evidence indicates multiple mentions of sponsored campaigns and promotions influencing customer decisions.",
+            "Web traffic diagnostics show a 1.3x increase in sessions and 1.1x increase in product page views during the movement period.",
+            "Promotions diagnostics show promotion_active = 1.0 and discount_pct = 0.1137 during the movement period."
+          ],
+          "contradicting_evidence": [
+            "Competitor diagnostics show no active promotions during the movement period.",
+            "Inventory diagnostics show no significant changes in stock levels during the movement period."
+          ],
+          "missing_evidence": [
+            "Evidence linking specific sponsored campaigns to the sales spike."
+          ],
+          "next_check": "Review campaign performance reports for CAMP-GT011 and other relevant campaigns."
+        },
+        {
+          "rank": 2,
+          "hypothesis": "Increased marketing spend drove higher conversions",
+          "confidence": 0.6,
+          "supporting_evidence": [
+            "Marketing evidence shows a 21.1% increase in spend and 28.5% increase in impressions during the movement period.",
+            "Web traffic diagnostics show a 1.3x increase in sessions and 1.1x increase in product page views during the movement period.",
+            "Conversion rate increased from 4.15% to 4.38% during the movement period."
+          ],
+          "contradicting_evidence": [
+            "Competitor diagnostics show no active promotions during the movement period.",
+            "Inventory diagnostics show no significant changes in stock levels during the movement period."
+          ],
+          "missing_evidence": [
+            "Evidence linking specific marketing spend to the sales spike."
+          ],
+          "next_check": "Review marketing spend allocation and campaign performance during the movement period."
+        },
+        {
+          "rank": 3,
+          "hypothesis": "Seasonal demand or external factors caused the sales spike",
+          "confidence": 0.4,
+          "supporting_evidence": [
+            "The sales spike occurred during a period of increased marketing spend and promotional activity.",
+            "There is no evidence of a specific external event or seasonal factor influencing the sales spike."
+          ],
+          "contradicting_evidence": [
+            "No evidence of external events or seasonal factors influencing the sales spike.",
+            "Inventory and logistics diagnostics show no significant changes that would suggest a surge in demand."
+          ],
+          "missing_evidence": [
+            "Evidence of external factors or seasonal trends influencing the sales spike."
+          ],
+          "next_check": "Review historical sales data for similar patterns in Delhi NCR for Apparel."
+        }
+      ],
+      "sourceRecommendations": [
+        {
+          "rank": 1,
+          "action_id": "A11",
+          "action": "Increase spend on the strongest-performing campaign",
+          "domain": "Marketing",
+          "why": "The investigation highlights that the sales spike is likely driven by increased marketing spend and promotional activity, particularly the 'CAMP-GT011' campaign, which is associated with higher paid traffic and conversions.",
+          "supporting_evidence": [
+            "Marketing evidence shows a 21.1% increase in spend and 28.5% increase in impressions during the movement period.",
+            "Unstructured evidence indicates multiple mentions of sponsored campaigns and promotions influencing customer decisions.",
+            "Web traffic diagnostics show a 1.3x increase in sessions and 1.1x increase in product page views during the movement period.",
+            "Promotions diagnostics show promotion_active = 1.0 and discount_pct = 0.1137 during the movement period."
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "The available evidence directly links increased marketing spend to the sales spike, and the action is within the domain of marketing which is directly relevant to the movement.",
+          "expected_business_effect": "Increase in marketing spend could further drive sales by leveraging the successful campaign that is already associated with the spike.",
+          "risk_or_limitation": "There is a risk that increased spend may not yield proportional results if the campaign is not optimized or if the market becomes saturated.",
+          "next_step": "Review the performance of CAMP-GT011 and other relevant campaigns to determine the effectiveness of increased spend."
+        },
+        {
+          "rank": 2,
+          "action_id": "A35",
+          "action": "Increase inventory readiness for a demand spike",
+          "domain": "Supply Chain",
+          "why": "The investigation shows a significant sales spike, and the inventory diagnostics show no significant changes in stock levels, suggesting that inventory may not be a limiting factor during the movement.",
+          "supporting_evidence": [
+            "Inventory diagnostics show no significant changes in stock levels during the movement period.",
+            "The sales spike occurred during a period of increased marketing spend and promotional activity."
+          ],
+          "feasibility": "medium",
+          "feasibility_reason": "While the evidence does not show a stockout, the spike could indicate a temporary demand surge that may require inventory readiness to handle potential future demand.",
+          "expected_business_effect": "Ensure that inventory is ready to meet the increased demand, preventing potential stockouts and ensuring customer satisfaction.",
+          "risk_or_limitation": "If the demand spike is temporary, increasing inventory readiness may lead to excess inventory which could be costly.",
+          "next_step": "Review inventory levels and replenishment schedules to ensure readiness for potential future demand."
+        },
+        {
+          "rank": 3,
+          "action_id": "A39",
+          "action": "Collect the missing evidence identified by the investigation",
+          "domain": "Analytics",
+          "why": "The investigation identified missing evidence, particularly linking specific sponsored campaigns to the sales spike, which is necessary to confirm the hypothesis.",
+          "supporting_evidence": [
+            "The investigation identified missing evidence, particularly linking specific sponsored campaigns to the sales spike."
+          ],
+          "feasibility": "unknown",
+          "feasibility_reason": "The feasibility depends on the availability of the missing evidence, which is not provided in the current evidence set.",
+          "expected_business_effect": "Acquiring the missing evidence will help in confirming the hypothesis and making more informed decisions.",
+          "risk_or_limitation": "If the missing evidence is not available, the hypothesis may not be validated, leading to potential misallocation of resources.",
+          "next_step": "Acquire the specific data required to distinguish between competing hypotheses."
+        },
+        {
+          "rank": 4,
+          "action_id": "A43",
+          "action": "Monitor the KPI against its historical baseline",
+          "domain": "Analytics",
+          "why": "The investigation indicates that the sales spike may be due to multiple plausible causes, and monitoring the KPI against its historical baseline will help in distinguishing temporary demand from a sustained shift.",
+          "supporting_evidence": [
+            "The investigation indicates that the sales spike may be due to multiple plausible causes.",
+            "The KPI evidence shows a significant deviation from the baseline."
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "The action is straightforward and does not require additional resources or data, making it highly feasible.",
+          "expected_business_effect": "Help in determining whether the sales spike is a temporary fluctuation or a sustained trend.",
+          "risk_or_limitation": "The action may not provide immediate insights if the movement is due to a temporary factor.",
+          "next_step": "Continue monitoring the KPI relative to its established trailing baseline."
+        },
+        {
+          "rank": 5,
+          "action_id": "A46",
+          "action": "Escalate the issue to the relevant functional owner",
+          "domain": "Management",
+          "why": "The investigation indicates that the sales spike may be due to multiple plausible causes, and escalating the issue to the relevant functional owner ensures that the problem is addressed by the appropriate team.",
+          "supporting_evidence": [
+            "The investigation indicates that the sales spike may be due to multiple plausible causes.",
+            "The investigation also identified missing evidence that may require further investigation."
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "Escalating the issue to the relevant functional owner is a standard management action and does not require additional resources or data.",
+          "expected_business_effect": "Ensures that the issue is addressed by the appropriate team, leading to a more effective resolution.",
+          "risk_or_limitation": "There is a risk that the issue may not be resolved if the functional owner is not adequately informed or if the problem is not within their domain.",
+          "next_step": "Assign the issue to the business function responsible for resolving it."
+        }
+      ]
+    },
+    {
+      "sourceMovementIndex": 1,
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "direction": "spike",
+      "period": {
+        "start": "2026-01-10",
+        "end": "2026-01-10"
+      },
+      "revenueDeviationPct": 15.2,
+      "summary": "A spike in sales occurred on 2026-01-10 in Delhi NCR for Electronics, with a z-score of 2.83 and a 15.25% revenue deviation. Inventory and logistics metrics remained stable, while web traffic and conversion rates increased. Competitor discounting increased, and marketing spend increased slightly.",
+      "conclusion": "multiple_plausible_causes",
+      "confidence": null,
+      "topHypothesis": {
+        "rank": 1,
+        "hypothesis": "Increased web traffic and conversion rates drove the sales spike",
+        "confidence": 0.6,
+        "supporting_evidence": [
+          "web_traffic.movement.sessions: 3552.0 (up from 3100.2222)",
+          "web_traffic.movement.product_page_views: 7639.0 (up from 5775.3333)",
+          "web_traffic.movement.conversion_rate: 0.0501 (up from 0.04)"
+        ],
+        "contradicting_evidence": [
+          "competitor.movement.discount_pct: 0.0691 (up from 0.0474)",
+          "promotions.movement.discount_pct: 0.017 (down from 0.0239)"
+        ],
+        "missing_evidence": [
+          "source_id/date/source_type for web traffic increase"
+        ],
+        "next_check": "Compare web traffic increase with competitor discounting"
+      },
+      "hypotheses": [
+        {
+          "rank": 1,
+          "hypothesis": "Increased web traffic and conversion rates drove the sales spike",
+          "confidence": 0.6,
+          "supporting_evidence": [
+            "web_traffic.movement.sessions: 3552.0 (up from 3100.2222)",
+            "web_traffic.movement.product_page_views: 7639.0 (up from 5775.3333)",
+            "web_traffic.movement.conversion_rate: 0.0501 (up from 0.04)"
+          ],
+          "contradicting_evidence": [
+            "competitor.movement.discount_pct: 0.0691 (up from 0.0474)",
+            "promotions.movement.discount_pct: 0.017 (down from 0.0239)"
+          ],
+          "missing_evidence": [
+            "source_id/date/source_type for web traffic increase"
+          ],
+          "next_check": "Compare web traffic increase with competitor discounting"
+        },
+        {
+          "rank": 2,
+          "hypothesis": "Competitor discounting increased, leading to price sensitivity and sales",
+          "confidence": 0.5,
+          "supporting_evidence": [
+            "competitor.movement.discount_pct: 0.0691 (up from 0.0474)",
+            "competitor.movement.price_gap_vs_us: 0.1084 (up from 0.0128)"
+          ],
+          "contradicting_evidence": [
+            "web_traffic.movement.conversion_rate: 0.0501 (up from 0.04)",
+            "promotions.movement.discount_pct: 0.017 (down from 0.0239)"
+          ],
+          "missing_evidence": [
+            "source_id/date/source_type for competitor discounting"
+          ],
+          "next_check": "Compare competitor discounting with web traffic increase"
+        },
+        {
+          "rank": 3,
+          "hypothesis": "Marketing spend increase led to higher conversions",
+          "confidence": 0.4,
+          "supporting_evidence": [
+            "marketing.weeks[1].spend_wow_pct_change: 2.94%",
+            "marketing.weeks[1].clicks_wow_pct_change: 7.64%",
+            "marketing.weeks[1].conversion_wow_pct_change: 0.715%"
+          ],
+          "contradicting_evidence": [
+            "competitor.movement.discount_pct: 0.0691 (up from 0.0474)",
+            "promotions.movement.discount_pct: 0.017 (down from 0.0239)"
+          ],
+          "missing_evidence": [
+            "source_id/date/source_type for marketing spend increase"
+          ],
+          "next_check": "Compare marketing spend increase with competitor discounting"
+        }
+      ],
+      "sourceRecommendations": [
+        {
+          "rank": 1,
+          "action_id": "A37",
+          "action": "Identify the source of organic demand",
+          "domain": "Marketing",
+          "why": "The spike in sales is associated with increased web traffic and conversion rates, and unstructured evidence suggests a sudden surge in demand due to organic social discussion.",
+          "supporting_evidence": [
+            "unstructured evidence indicates a sudden surge in demand due to organic social discussion",
+            "web traffic and conversion rates increased significantly"
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "The action is feasible as the unstructured evidence directly supports the need to identify the source of organic demand.",
+          "expected_business_effect": "Identifying the source of organic demand can help in understanding the root cause of the sales spike and optimizing marketing strategies.",
+          "risk_or_limitation": "The organic demand may not be sustainable or may be influenced by external factors not yet identified.",
+          "next_step": "Analyze the unstructured evidence to determine the specific sources of organic demand and their impact on sales."
+        },
+        {
+          "rank": 2,
+          "action_id": "A11",
+          "action": "Increase spend on the strongest-performing campaign",
+          "domain": "Marketing",
+          "why": "The marketing spend increased slightly, and the conversion rate increased, suggesting that the strongest-performing campaign may be contributing to the sales spike.",
+          "supporting_evidence": [
+            "marketing.weeks[1].conversion_wow_pct_change: 0.715%",
+            "marketing.weeks[1].clicks_wow_pct_change: 7.64%"
+          ],
+          "feasibility": "medium",
+          "feasibility_reason": "The feasibility is medium as the action depends on the assumption that the strongest-performing campaign is the primary driver of the sales spike, which is not fully confirmed by the evidence.",
+          "expected_business_effect": "Increasing spend on the strongest-performing campaign may further boost sales and conversions.",
+          "risk_or_limitation": "The campaign may not be the primary driver of the sales spike, and additional evidence is needed to confirm this.",
+          "next_step": "Review the marketing data to determine which campaigns are performing best and allocate additional budget accordingly."
+        },
+        {
+          "rank": 3,
+          "action_id": "A09",
+          "action": "Reallocate marketing budget across channels",
+          "domain": "Marketing",
+          "why": "The marketing spend increased slightly, and the conversion rate increased, suggesting that the strongest-performing channels may be contributing to the sales spike.",
+          "supporting_evidence": [
+            "marketing.weeks[1].clicks_wow_pct_change: 7.64%",
+            "marketing.weeks[1].conversion_wow_pct_change: 0.715%"
+          ],
+          "feasibility": "medium",
+          "feasibility_reason": "The feasibility is medium as the action depends on the assumption that the strongest-performing channels are the primary drivers of the sales spike, which is not fully confirmed by the evidence.",
+          "expected_business_effect": "Reallocating the marketing budget to the strongest-performing channels may further boost sales and conversions.",
+          "risk_or_limitation": "The channels may not be the primary drivers of the sales spike, and additional evidence is needed to confirm this.",
+          "next_step": "Review the marketing data to determine which channels are performing best and reallocate the budget accordingly."
+        },
+        {
+          "rank": 4,
+          "action_id": "A39",
+          "action": "Collect the missing evidence identified by the investigation",
+          "domain": "Analytics",
+          "why": "The investigation identified missing evidence, such as the source of organic demand, which is necessary to distinguish between competing hypotheses.",
+          "supporting_evidence": [
+            "missing_evidence: source_id/date/source_type for web traffic increase",
+            "missing_evidence: source_id/date/source_type for competitor discounting"
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "The action is feasible as the missing evidence is directly related to the investigation and is necessary to confirm the root cause of the sales spike.",
+          "expected_business_effect": "Collecting the missing evidence will help in confirming the root cause of the sales spike and inform further actions.",
+          "risk_or_limitation": "The missing evidence may not be available or may be difficult to obtain, which could delay the analysis.",
+          "next_step": "Acquire the specific data required to distinguish between competing hypotheses."
+        },
+        {
+          "rank": 5,
+          "action_id": "A36",
+          "action": "Monitor whether the demand spike persists",
+          "domain": "Analytics",
+          "why": "The sales spike is a one-day event, and monitoring the KPI against its historical baseline will help in distinguishing temporary demand from a sustained shift.",
+          "supporting_evidence": [
+            "revenue_deviation_pct: 15.25%",
+            "z_score: 2.83"
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "The action is feasible as the KPI monitoring is a standard practice and the evidence supports the need to monitor the movement.",
+          "expected_business_effect": "Monitoring the KPI will help in understanding whether the sales spike is a temporary event or a sustained trend.",
+          "risk_or_limitation": "The demand spike may be a temporary event, and further actions may be required if it persists.",
+          "next_step": "Continue tracking the KPI relative to its established trailing baseline to determine the nature of the movement."
+        }
+      ]
+    },
+    {
+      "sourceMovementIndex": 2,
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "direction": "spike",
+      "period": {
+        "start": "2026-02-01",
+        "end": "2026-02-02"
+      },
+      "revenueDeviationPct": 44.0,
+      "summary": "A significant sales spike occurred in Delhi NCR for Electronics between February 1-2, 2026, with units sold increasing by 39.84% and revenue by 38.82% compared to the previous week. The spike was not accompanied by changes in pricing, promotions, or inventory levels. Web traffic increased significantly, and there was a surge in organic social media mentions, suggesting a viral or organic demand increase.",
+      "conclusion": "multiple_plausible_causes",
+      "confidence": null,
+      "topHypothesis": {
+        "rank": 1,
+        "hypothesis": "Organic social media virality drove increased demand",
+        "confidence": 0.7,
+        "supporting_evidence": [
+          "Unstructured evidence shows a surge in organic social media mentions (24 observations) during the spike period, with repeated mentions of the product being 'all over my feed' and 'suddenly everywhere online'.",
+          "Web traffic increased significantly during the spike period, with product page views rising from 5,668.71 to 10,606.5, and sessions increasing from 3,075.07 to 5,822.5.",
+          "Competitor activity did not change significantly, and pricing remained stable, suggesting no direct competitive influence."
+        ],
+        "contradicting_evidence": [
+          "Marketing spend decreased by 13% in the previous week, but there was no corresponding decrease in conversions, suggesting that the spike was not due to reduced paid advertising.",
+          "Inventory levels remained stable, and fill rates were high, indicating that supply was not a limiting factor."
+        ],
+        "missing_evidence": [
+          "No evidence of external events or trends that could have influenced consumer behavior during the spike period."
+        ],
+        "next_check": "Check for external events or trends that may have influenced consumer behavior during the spike period."
+      },
+      "hypotheses": [
+        {
+          "rank": 1,
+          "hypothesis": "Organic social media virality drove increased demand",
+          "confidence": 0.7,
+          "supporting_evidence": [
+            "Unstructured evidence shows a surge in organic social media mentions (24 observations) during the spike period, with repeated mentions of the product being 'all over my feed' and 'suddenly everywhere online'.",
+            "Web traffic increased significantly during the spike period, with product page views rising from 5,668.71 to 10,606.5, and sessions increasing from 3,075.07 to 5,822.5.",
+            "Competitor activity did not change significantly, and pricing remained stable, suggesting no direct competitive influence."
+          ],
+          "contradicting_evidence": [
+            "Marketing spend decreased by 13% in the previous week, but there was no corresponding decrease in conversions, suggesting that the spike was not due to reduced paid advertising.",
+            "Inventory levels remained stable, and fill rates were high, indicating that supply was not a limiting factor."
+          ],
+          "missing_evidence": [
+            "No evidence of external events or trends that could have influenced consumer behavior during the spike period."
+          ],
+          "next_check": "Check for external events or trends that may have influenced consumer behavior during the spike period."
+        },
+        {
+          "rank": 2,
+          "hypothesis": "Increased online visibility and product awareness led to higher sales",
+          "confidence": 0.6,
+          "supporting_evidence": [
+            "Unstructured evidence indicates a sharp increase in online attention around the product, driven mainly by organic social discussion.",
+            "Product page views increased significantly, suggesting that the product became more visible to consumers.",
+            "Conversion rates remained stable, indicating that the increase in traffic was not due to a drop in consumer interest."
+          ],
+          "contradicting_evidence": [
+            "Marketing spend decreased, but conversions increased, suggesting that the spike was not due to increased paid advertising.",
+            "Inventory levels remained stable, indicating that supply was not a limiting factor."
+          ],
+          "missing_evidence": [
+            "No evidence of a specific marketing campaign or event that could have increased product visibility."
+          ],
+          "next_check": "Investigate whether there was a specific marketing campaign or event that could have increased product visibility."
+        },
+        {
+          "rank": 3,
+          "hypothesis": "Seasonal or trend-based demand increase",
+          "confidence": 0.4,
+          "supporting_evidence": [
+            "The spike occurred during a period of increased online attention, which could be part of a broader trend.",
+            "There is no evidence of a specific event or campaign that could have triggered the spike, but the increase in organic social media mentions suggests a trend-based increase."
+          ],
+          "contradicting_evidence": [
+            "There is no evidence of a specific event or campaign that could have triggered the spike, and the spike occurred in the middle of a period of declining marketing spend."
+          ],
+          "missing_evidence": [
+            "No evidence of a specific trend or event that could have triggered the spike."
+          ],
+          "next_check": "Investigate whether there was a specific trend or event that could have triggered the spike."
+        }
+      ],
+      "sourceRecommendations": [
+        {
+          "rank": 1,
+          "action_id": "A37",
+          "action": "Identify the source of organic demand",
+          "domain": "Marketing",
+          "why": "The investigation highlights a surge in organic social media mentions and increased online attention, suggesting a viral or organic demand increase. Identifying the source of this demand can help understand the root cause and potentially replicate the effect.",
+          "supporting_evidence": [
+            "Unstructured evidence shows a surge in organic social media mentions (24 observations) during the spike period, with repeated mentions of the product being 'all over my feed' and 'suddenly everywhere online'.",
+            "Unstructured evidence indicates a sharp increase in online attention around the product, driven mainly by organic social discussion."
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "The action is directly supported by the investigation's findings on organic social media virality and increased online attention.",
+          "expected_business_effect": "Understanding the source of the organic demand can help in replicating the effect or addressing any potential issues with the trend.",
+          "risk_or_limitation": "The identified source may not be sustainable or may be influenced by external factors not yet understood.",
+          "next_step": "Analyze the unstructured evidence to identify the most frequent and influential sources of organic demand."
+        },
+        {
+          "rank": 2,
+          "action_id": "A38",
+          "action": "Amplify successful organic content",
+          "domain": "Marketing",
+          "why": "The investigation indicates that the product is suddenly 'all over my feed' and 'suddenly everywhere online', suggesting that the product is gaining traction through organic content. Amplifying this content can help sustain or increase the demand.",
+          "supporting_evidence": [
+            "Unstructured evidence indicates a sharp increase in online attention around the product, driven mainly by organic social discussion.",
+            "Unstructured evidence shows a surge in organic social media mentions (24 observations) during the spike period, with repeated mentions of the product being 'all over my feed' and 'suddenly everywhere online'."
+          ],
+          "feasibility": "medium",
+          "feasibility_reason": "The action is plausible, but the feasibility depends on the ability to identify and amplify the specific content driving the organic demand.",
+          "expected_business_effect": "Increasing the visibility of the product through organic content can help sustain the current demand trend.",
+          "risk_or_limitation": "The content may not be aligned with the brand's messaging or may be influenced by external trends.",
+          "next_step": "Identify the most effective organic content driving the demand and allocate resources to amplify it."
+        },
+        {
+          "rank": 3,
+          "action_id": "A39",
+          "action": "Collect the missing evidence identified by the investigation",
+          "domain": "Analytics",
+          "why": "The investigation identified a need to check for external events or trends that could have influenced consumer behavior during the spike period. Collecting this evidence will help in understanding the root cause of the demand increase.",
+          "supporting_evidence": [
+            "The investigation's 'missing_evidence' section includes a need to investigate whether there was a specific event or trend that could have triggered the spike."
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "The action is directly supported by the investigation's findings and is a necessary step to validate the hypotheses.",
+          "expected_business_effect": "This will help in determining whether the demand spike is due to an external event or a sustainable trend.",
+          "risk_or_limitation": "The missing evidence may not be available or may not provide a clear answer.",
+          "next_step": "Investigate and collect data on external events or trends that may have influenced consumer behavior during the spike period."
+        },
+        {
+          "rank": 4,
+          "action_id": "A36",
+          "action": "Monitor whether the demand spike persists",
+          "domain": "Analytics",
+          "why": "The investigation suggests that the spike may be due to a temporary trend or external event. Monitoring the demand over time will help determine if the spike is a one-time event or a sustained shift.",
+          "supporting_evidence": [
+            "The investigation's 'missing_evidence' section includes a need to check for external events or trends that could have influenced consumer behavior during the spike period."
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "The action is directly supported by the investigation's findings and is a necessary step to understand the nature of the demand increase.",
+          "expected_business_effect": "This will help in determining if the demand spike is a temporary event or a sustained trend.",
+          "risk_or_limitation": "The spike may be influenced by external factors that are not easily measurable or predictable.",
+          "next_step": "Continue monitoring the KPI against its historical baseline to determine if the spike is temporary or sustained."
+        },
+        {
+          "rank": 5,
+          "action_id": "A40",
+          "action": "Run a controlled experiment",
+          "domain": "Analytics",
+          "why": "The investigation suggests that the spike may be due to a temporary trend or external event. A controlled experiment can help determine if the spike is due to a specific factor or a random fluctuation.",
+          "supporting_evidence": [
+            "The investigation's 'missing_evidence' section includes a need to check for external events or trends that could have influenced consumer behavior during the spike period."
+          ],
+          "feasibility": "unknown",
+          "feasibility_reason": "The feasibility depends on the availability of resources and the ability to conduct a controlled experiment without affecting the current demand spike.",
+          "expected_business_effect": "This will help in determining the root cause of the demand spike and whether it is a temporary or sustained trend.",
+          "risk_or_limitation": "The experiment may interfere with the current demand spike or may not provide clear results due to external factors.",
+          "next_step": "Design and execute a controlled experiment to test the hypothesis that the spike is due to an external event or trend."
+        }
+      ]
+    },
+    {
+      "sourceMovementIndex": 3,
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "direction": "spike",
+      "period": {
+        "start": "2026-02-28",
+        "end": "2026-02-28"
+      },
+      "revenueDeviationPct": 17.3,
+      "summary": "A spike in sales occurred on 2026-02-28 in Delhi NCR for Electronics, with a z-score of 2.587. The movement was isolated to one day, with no prior sales anomalies. Inventory, logistics, and pricing remained stable. Web traffic increased, but conversion rate dropped. Marketing spend increased in the prior week, but conversion rates declined in the following week.",
+      "conclusion": "multiple_plausible_causes",
+      "confidence": null,
+      "topHypothesis": {
+        "rank": 1,
+        "hypothesis": "Increased web traffic led to higher units sold",
+        "confidence": 0.6,
+        "supporting_evidence": [
+          "web_traffic: movement sessions (3594.0) increased by 17.6% compared to baseline (3029.8571)",
+          "web_traffic: product_page_views increased by 17.1% compared to baseline (5836.6429 vs 6633.0)"
+        ],
+        "contradicting_evidence": [
+          "web_traffic: conversion_rate decreased from 4.0% to 2.75%"
+        ],
+        "missing_evidence": [
+          "source_id/date/source_type for web traffic increase"
+        ],
+        "next_check": "Compare conversion rate trends with web traffic changes"
+      },
+      "hypotheses": [
+        {
+          "rank": 1,
+          "hypothesis": "Increased web traffic led to higher units sold",
+          "confidence": 0.6,
+          "supporting_evidence": [
+            "web_traffic: movement sessions (3594.0) increased by 17.6% compared to baseline (3029.8571)",
+            "web_traffic: product_page_views increased by 17.1% compared to baseline (5836.6429 vs 6633.0)"
+          ],
+          "contradicting_evidence": [
+            "web_traffic: conversion_rate decreased from 4.0% to 2.75%"
+          ],
+          "missing_evidence": [
+            "source_id/date/source_type for web traffic increase"
+          ],
+          "next_check": "Compare conversion rate trends with web traffic changes"
+        },
+        {
+          "rank": 2,
+          "hypothesis": "Marketing spend increase in prior week drove sales",
+          "confidence": 0.5,
+          "supporting_evidence": [
+            "marketing: spend_wow_pct_change for week_start 2026-02-19 was 5.18%",
+            "marketing: spend_wow_pct_change for week_start 2026-02-26 was 9.96%"
+          ],
+          "contradicting_evidence": [
+            "marketing: conversion_wow_pct_change for week_start 2026-02-26 was -16.67%"
+          ],
+          "missing_evidence": [
+            "source_id/date/source_type for marketing spend increase"
+          ],
+          "next_check": "Compare conversion rates with marketing spend changes"
+        },
+        {
+          "rank": 3,
+          "hypothesis": "Price changes or promotions influenced sales",
+          "confidence": 0.4,
+          "supporting_evidence": [
+            "pricing: discount_pct increased from 3.76% to 4.08%",
+            "competitor: price_gap_vs_us increased from 4.39% to 4.81%"
+          ],
+          "contradicting_evidence": [
+            "promotions: discount_pct decreased from 1.55% to 0.94%"
+          ],
+          "missing_evidence": [
+            "source_id/date/source_type for price changes"
+          ],
+          "next_check": "Compare price changes with sales trends"
+        }
+      ],
+      "sourceRecommendations": [
+        {
+          "rank": 1,
+          "action_id": "A37",
+          "action": "Identify the source of organic demand",
+          "domain": "Marketing",
+          "why": "The investigated movement shows a spike in sales with increased web traffic and social mentions, suggesting organic demand may be driving the increase.",
+          "supporting_evidence": [
+            "Integrated unstructured evidence shows increased organic social discussion and product visibility in Delhi NCR for Electronics.",
+            "Web traffic increased by 17.6% with a drop in conversion rate, indicating possible organic demand influence."
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "The action is feasible as the unstructured evidence directly supports the hypothesis of organic demand influence.",
+          "expected_business_effect": "Identifying the source of organic demand can help optimize marketing strategies and improve conversion rates.",
+          "risk_or_limitation": "The action may not directly address the sales spike if the organic demand is temporary or not scalable.",
+          "next_step": "Analyze the unstructured evidence to determine the specific channels or sources driving the organic demand."
+        },
+        {
+          "rank": 2,
+          "action_id": "A11",
+          "action": "Increase spend on the strongest-performing campaign",
+          "domain": "Marketing",
+          "why": "The marketing spend increased in the prior week, and the investigation suggests this may have driven the sales spike.",
+          "supporting_evidence": [
+            "Marketing spend increased by 5.18% and 9.96% in the two weeks prior to the sales spike.",
+            "Conversion rates declined in the following week, suggesting a possible link to marketing spend changes."
+          ],
+          "feasibility": "medium",
+          "feasibility_reason": "The feasibility is medium as the evidence is indirect, and the action requires budget approval and campaign optimization.",
+          "expected_business_effect": "Increasing spend on the strongest-performing campaign may help sustain or increase the sales spike.",
+          "risk_or_limitation": "The action may not be effective if the campaign is not aligned with the current demand trends.",
+          "next_step": "Review the marketing spend data to identify the strongest-performing campaign and allocate additional budget."
+        },
+        {
+          "rank": 3,
+          "action_id": "A39",
+          "action": "Collect the missing evidence identified by the investigation",
+          "domain": "Analytics",
+          "why": "The investigation identified missing evidence, such as source IDs for web traffic and marketing spend, which are needed to validate the hypotheses.",
+          "supporting_evidence": [
+            "The investigation highlighted missing evidence for web traffic and marketing spend sources.",
+            "The unstructured evidence provides some context but lacks specific source IDs for analysis."
+          ],
+          "feasibility": "unknown",
+          "feasibility_reason": "The feasibility is unknown as the availability of specific source IDs is not confirmed in the evidence provided.",
+          "expected_business_effect": "Collecting the missing evidence will help validate the hypotheses and provide a clearer understanding of the sales spike.",
+          "risk_or_limitation": "The action may not be feasible if the missing evidence is not available or if the data is not accessible.",
+          "next_step": "Request the missing evidence from the relevant data sources or teams."
+        },
+        {
+          "rank": 4,
+          "action_id": "A36",
+          "action": "Monitor whether the demand spike persists",
+          "domain": "Analytics",
+          "why": "The sales spike is isolated to one day, and the investigation suggests it may be a temporary fluctuation.",
+          "supporting_evidence": [
+            "The sales spike is isolated to one day with no prior anomalies.",
+            "The KPI evidence shows a z-score of 2.587, indicating a significant but isolated movement."
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "The action is feasible as it involves monitoring KPIs against the historical baseline, which is already in place.",
+          "expected_business_effect": "Monitoring the KPI will help determine if the sales spike is a one-time event or a sustained trend.",
+          "risk_or_limitation": "The action may not provide actionable insights if the spike is temporary and not related to underlying trends.",
+          "next_step": "Continue tracking the KPI against the historical baseline to determine the nature of the movement."
+        },
+        {
+          "rank": 5,
+          "action_id": "A45",
+          "action": "Reallocate resources toward the highest-impact problem",
+          "domain": "Strategy",
+          "why": "The investigation suggests multiple plausible causes, and reallocating resources can help address the highest-impact issue.",
+          "supporting_evidence": [
+            "The investigation highlights multiple hypotheses with varying confidence levels.",
+            "The sales spike is isolated to one day, but the underlying causes may require resource allocation."
+          ],
+          "feasibility": "medium",
+          "feasibility_reason": "The feasibility is medium as the action requires identifying the highest-impact problem, which is not explicitly confirmed in the evidence.",
+          "expected_business_effect": "Reallocating resources can help address the root cause of the sales spike and improve long-term performance.",
+          "risk_or_limitation": "The action may not be effective if the highest-impact problem is not clearly identified or if resources are not available.",
+          "next_step": "Identify the highest-impact problem based on the investigation hypotheses and allocate resources accordingly."
+        }
+      ]
+    },
+    {
+      "sourceMovementIndex": 4,
+      "region": "Gujarat",
+      "category": "Electronics",
+      "direction": "spike",
+      "period": {
+        "start": "2026-03-22",
+        "end": "2026-03-22"
+      },
+      "revenueDeviationPct": 17.2,
+      "summary": "A single day (2026-03-22) in Gujarat saw a material sales spike in the Electronics category, with units sold increasing by 9.15% and revenue by 10.13% compared to the trailing baseline. Inventory and logistics metrics remained stable, pricing increased slightly, web traffic decreased slightly but conversion rate increased, and competitor pricing decreased. Marketing spend showed a 9.98% increase in the week starting 2026-03-19, but no promotions were active.",
+      "conclusion": "multiple_plausible_causes",
+      "confidence": null,
+      "topHypothesis": {
+        "rank": 1,
+        "hypothesis": "Increased marketing spend in the week prior led to higher customer awareness and conversions.",
+        "confidence": 0.6,
+        "supporting_evidence": [
+          "marketing evidence: week_start 2026-03-19, total_spend 502511.98, spend_wow_pct_change 9.98%",
+          "sales KPI evidence: 2026-03-22, conversion_rate 0.0528 (up from 0.0387 in baseline)"
+        ],
+        "contradicting_evidence": [
+          "web traffic evidence: 2026-03-22, sessions 2807 (down from 3022.57 in baseline), product_page_views 5355 (down from 5513.71)"
+        ],
+        "missing_evidence": [
+          "specific marketing campaign details",
+          "direct link between marketing spend and sales spike"
+        ],
+        "next_check": "Compare conversion rate changes with specific marketing campaign details"
+      },
+      "hypotheses": [
+        {
+          "rank": 1,
+          "hypothesis": "Increased marketing spend in the week prior led to higher customer awareness and conversions.",
+          "confidence": 0.6,
+          "supporting_evidence": [
+            "marketing evidence: week_start 2026-03-19, total_spend 502511.98, spend_wow_pct_change 9.98%",
+            "sales KPI evidence: 2026-03-22, conversion_rate 0.0528 (up from 0.0387 in baseline)"
+          ],
+          "contradicting_evidence": [
+            "web traffic evidence: 2026-03-22, sessions 2807 (down from 3022.57 in baseline), product_page_views 5355 (down from 5513.71)"
+          ],
+          "missing_evidence": [
+            "specific marketing campaign details",
+            "direct link between marketing spend and sales spike"
+          ],
+          "next_check": "Compare conversion rate changes with specific marketing campaign details"
+        },
+        {
+          "rank": 2,
+          "hypothesis": "Price increase led to higher average revenue per unit, contributing to revenue growth.",
+          "confidence": 0.5,
+          "supporting_evidence": [
+            "pricing evidence: 2026-03-22, discount_pct 0.0595 (up from 0.044 in baseline)",
+            "sales KPI evidence: 2026-03-22, revenue 2780663.13 (up from 2372502.95 in baseline)"
+          ],
+          "contradicting_evidence": [
+            "competitor evidence: 2026-03-22, price_gap_vs_us -0.0501 (down from 0.0233 in baseline)"
+          ],
+          "missing_evidence": [
+            "specific pricing strategy",
+            "impact of price changes on unit sales"
+          ],
+          "next_check": "Analyze price elasticity and compare with competitor pricing"
+        },
+        {
+          "rank": 3,
+          "hypothesis": "Improved web traffic conversion rate led to higher sales.",
+          "confidence": 0.4,
+          "supporting_evidence": [
+            "web traffic evidence: 2026-03-22, conversion_rate 0.0528 (up from 0.0387 in baseline)",
+            "sales KPI evidence: 2026-03-22, units_sold 1455 (up from 1240 in baseline)"
+          ],
+          "contradicting_evidence": [
+            "web traffic evidence: 2026-03-22, sessions 2807 (down from 3022.57 in baseline), product_page_views 5355 (down from 5513.71)"
+          ],
+          "missing_evidence": [
+            "specific factors driving conversion rate increase",
+            "impact of traffic changes on sales"
+          ],
+          "next_check": "Analyze specific traffic sources and conversion paths"
+        }
+      ],
+      "sourceRecommendations": [
+        {
+          "rank": 1,
+          "action_id": "A11",
+          "action": "Increase spend on the strongest-performing campaign",
+          "domain": "Marketing",
+          "why": "The week starting 2026-03-19 showed a 9.98% increase in marketing spend, which may have contributed to the sales spike. The conversion rate increased from 0.0387 to 0.0528, suggesting a positive response to marketing efforts.",
+          "supporting_evidence": [
+            "marketing evidence: week_start 2026-03-19, total_spend 502511.98, spend_wow_pct_change 9.98%",
+            "sales KPI evidence: 2026-03-22, conversion_rate 0.0528 (up from 0.0387 in baseline)"
+          ],
+          "feasibility": "medium",
+          "feasibility_reason": "The marketing spend increase is within the available budget, and the conversion rate improvement supports the hypothesis. However, the direct link between marketing spend and sales spike is not fully established.",
+          "expected_business_effect": "Increase in marketing spend could lead to higher sales if the increased spend is effectively driving conversions.",
+          "risk_or_limitation": "There is a risk that the increased spend may not translate into higher sales if the marketing efforts are not optimized.",
+          "next_step": "Analyze the specific marketing campaigns and their performance to determine the most effective channels for increased spend."
+        },
+        {
+          "rank": 2,
+          "action_id": "A20",
+          "action": "Run a price elasticity analysis",
+          "domain": "Pricing",
+          "why": "The pricing increased slightly, and the revenue increased by 10.13%. A price elasticity analysis can help determine if the price increase contributed to the revenue growth.",
+          "supporting_evidence": [
+            "pricing evidence: 2026-03-22, discount_pct 0.0595 (up from 0.044 in baseline)",
+            "sales KPI evidence: 2026-03-22, revenue 2780663.13 (up from 2372502.95 in baseline)"
+          ],
+          "feasibility": "unknown",
+          "feasibility_reason": "The available evidence does not include the necessary data to perform a price elasticity analysis, such as historical price changes and their impact on sales.",
+          "expected_business_effect": "A price elasticity analysis can help determine if the price increase was a factor in the revenue growth.",
+          "risk_or_limitation": "The analysis may not be feasible without additional data, and the results may not be reliable without proper data.",
+          "next_step": "Collect additional data on price changes and their impact on sales to perform the analysis."
+        },
+        {
+          "rank": 3,
+          "action_id": "A39",
+          "action": "Collect the missing evidence identified by the investigation",
+          "domain": "Analytics",
+          "why": "The investigation identified missing evidence, such as specific marketing campaign details and the direct link between marketing spend and sales spike, which are needed to validate the hypotheses.",
+          "supporting_evidence": [
+            "missing_evidence: specific marketing campaign details",
+            "missing_evidence: direct link between marketing spend and sales spike"
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "The missing evidence can be collected through data analysis or by consulting with the marketing team.",
+          "expected_business_effect": "Collecting the missing evidence will help validate the hypotheses and provide a clearer understanding of the sales spike.",
+          "risk_or_limitation": "The missing evidence may not be available, and the data collection process may take time.",
+          "next_step": "Identify the specific data required and collect it from the marketing team or other relevant sources."
+        },
+        {
+          "rank": 4,
+          "action_id": "A43",
+          "action": "Monitor the KPI against its historical baseline",
+          "domain": "Analytics",
+          "why": "The sales spike is a single day, and monitoring the KPI against its historical baseline can help determine if the movement is a temporary fluctuation or a sustained trend.",
+          "supporting_evidence": [
+            "sales KPI evidence: 2026-03-22, z_score 2.5974, revenue_deviation_pct 17.20%",
+            "sales KPI evidence: 2026-03-23, z_score -0.4569, revenue_deviation_pct -1.79%"
+          ],
+          "feasibility": "high",
+          "feasibility_reason": "The KPI monitoring is a standard practice and can be implemented without additional resources.",
+          "expected_business_effect": "Monitoring the KPI will help determine if the sales spike is a temporary fluctuation or a sustained trend.",
+          "risk_or_limitation": "The movement may be a temporary fluctuation, and the monitoring may not provide actionable insights.",
+          "next_step": "Continue monitoring the KPI and compare it against the historical baseline to determine the nature of the movement."
+        },
+        {
+          "rank": 5,
+          "action_id": "A45",
+          "action": "Reallocate resources toward the highest-impact problem",
+          "domain": "Strategy",
+          "why": "The sales spike may be due to a combination of factors, and reallocating resources toward the highest-impact problem can help address the underlying causes.",
+          "supporting_evidence": [
+            "hypothesis: increased marketing spend led to higher customer awareness and conversions",
+            "hypothesis: price increase led to higher average revenue per unit"
+          ],
+          "feasibility": "medium",
+          "feasibility_reason": "Reallocating resources is a strategic decision that requires approval and may involve budget changes.",
+          "expected_business_effect": "Reallocating resources can help address the underlying causes of the sales spike and improve long-term performance.",
+          "risk_or_limitation": "There may be budget constraints, and the reallocation may not be effective if the underlying causes are not addressed.",
+          "next_step": "Identify the highest-impact problem and reallocate resources accordingly."
+        }
+      ]
+    }
+  ],
+ 
+"HR": [
+  {
+    "id": 1,
+    "role": "HR",
+    "severity": "High",
+    "title": "Employee Satisfaction Decline",
+    "metric": "Employee Satisfaction",
+    "change": "-18%",
+    "trend": "down",
+    "region": "Sales Department",
+    "summary": "Employee satisfaction declined alongside an increase in negative HR feedback.",
+    "whatHappened": "Employee satisfaction declined by 18% in the Sales Department, accompanied by an increase in negative employee feedback.",
+    "rootCause": "High workload and inconsistent manager communication are contributing to declining employee satisfaction.",
+    "recommendations": [
+      {
+        "action": "Review workload distribution across regional sales teams",
+        "feasibility": "Medium"
+      },
+      {
+        "action": "Conduct employee feedback sessions and pulse checks",
+        "feasibility": "Easy"
+      },
+      {
+        "action": "Work with department managers to streamline communication",
+        "feasibility": "Medium"
+      }
+    ],
+    "category": "Workforce",
+    "timestamp": "1 hour ago",
+    "impactScore": 92,
+    "ragContext": {
+      "roleFocus": "Employee experience, engagement, workload, and manager effectiveness",
+      "businessImpact": "Continued dissatisfaction can reduce productivity, engagement, and increase future attrition risk.",
+      "riskIfIgnored": "Employee dissatisfaction may escalate into increased absenteeism and voluntary turnover.",
+      "keyFindings": [
+        "Employee satisfaction declined by 18%",
+        "Negative HR feedback increased",
+        "Sales teams are experiencing workload pressure"
+      ],
+      "contributingFactors": [
+        "High workload",
+        "Inconsistent manager communication"
+      ]
+    }
+  },
+
+  {
+    "id": 2,
+    "role": "HR",
+    "severity": "High",
+    "title": "Attrition Risk Increased",
+    "metric": "Engineering Flight Risk",
+    "change": "+14%",
+    "trend": "up",
+    "region": "Engineering Division",
+    "summary": "Predictive attrition models indicate an elevated departure risk among senior engineers.",
+    "whatHappened": "Predicted attrition risk increased by 14% among senior engineers in the Engineering Division.",
+    "rootCause": "Market compensation disparity and aggressive milestone deadlines are increasing retention risk among critical technical employees.",
+    "recommendations": [
+      {
+        "action": "Authorize targeted retention equity refreshers for critical technical talent",
+        "feasibility": "Hard"
+      },
+      {
+        "action": "Establish cooldown sprint intervals between major releases",
+        "feasibility": "Medium"
+      },
+      {
+        "action": "Conduct 1-on-1 stay interviews with engineering team leads",
+        "feasibility": "Easy"
+      }
+    ],
+    "category": "Retention",
+    "timestamp": "2 hours ago",
+    "impactScore": 88,
+    "ragContext": {
+      "roleFocus": "Employee retention and critical talent risk",
+      "businessImpact": "Loss of senior engineers could affect technical continuity, delivery timelines, and replacement costs.",
+      "riskIfIgnored": "Critical technical talent may leave the organization, increasing hiring costs and project delivery risk.",
+      "keyFindings": [
+        "Engineering flight risk increased by 14%",
+        "Senior engineers are the highest-risk population",
+        "Compensation competitiveness is a concern"
+      ],
+      "contributingFactors": [
+        "Market compensation disparity",
+        "Aggressive milestone deadlines",
+        "Sustained workload pressure"
+      ]
+    }
+  },
+
+  {
+    "id": 3,
+    "role": "HR",
+    "severity": "Medium",
+    "title": "Absenteeism Increased",
+    "metric": "Unplanned Absence Rate",
+    "change": "+22%",
+    "trend": "up",
+    "region": "Customer Support Hub",
+    "summary": "Unplanned employee absences have risen across customer support teams.",
+    "whatHappened": "Unplanned employee absence rates increased by 22% across the Customer Support Hub.",
+    "rootCause": "Shift fatigue, repetitive ticket volume, and inadequate wellness support are contributing to higher absenteeism.",
+    "recommendations": [
+      {
+        "action": "Rebalance shift scheduling to avoid consecutive weekend allocations",
+        "feasibility": "Easy"
+      },
+      {
+        "action": "Deploy automated AI triage to reduce routine manual ticket load",
+        "feasibility": "Medium"
+      },
+      {
+        "action": "Promote employee assistance and mental wellness programs",
+        "feasibility": "Easy"
+      }
+    ],
+    "category": "Workforce",
+    "timestamp": "3 hours ago",
+    "impactScore": 74,
+    "ragContext": {
+      "roleFocus": "Workforce wellbeing and absence management",
+      "businessImpact": "Higher absenteeism can reduce service capacity and increase workload pressure on remaining employees.",
+      "riskIfIgnored": "Continued absence patterns could lead to burnout, service disruption, and additional employee turnover.",
+      "keyFindings": [
+        "Unplanned absence increased by 22%",
+        "Customer support teams are affected",
+        "Workload pressure is contributing to employee fatigue"
+      ],
+      "contributingFactors": [
+        "Shift fatigue",
+        "Repetitive ticket volume",
+        "Inadequate wellness support"
+      ]
+    }
+  },
+
+  {
+    "id": 4,
+    "role": "HR",
+    "severity": "Medium",
+    "title": "Hiring Pipeline Delays",
+    "metric": "Time-to-Hire SLA",
+    "change": "+28%",
+    "trend": "up",
+    "region": "North America Talent",
+    "summary": "Average time-to-hire for specialized data and machine learning roles has extended.",
+    "whatHappened": "Average time-to-hire increased by 28% for specialized data and machine learning positions.",
+    "rootCause": "Prolonged interview loops and delayed hiring manager feedback are slowing the recruitment pipeline.",
+    "recommendations": [
+      {
+        "action": "Enforce a strict 48-hour hiring manager feedback SLA after panel rounds",
+        "feasibility": "Easy"
+      },
+      {
+        "action": "Consolidate technical assessment stages into paired coding sessions",
+        "feasibility": "Medium"
+      },
+      {
+        "action": "Expand proactive talent pipelining through targeted technical outreach",
+        "feasibility": "Medium"
+      }
+    ],
+    "category": "Hiring",
+    "timestamp": "4 hours ago",
+    "impactScore": 68,
+    "ragContext": {
+      "roleFocus": "Talent acquisition and recruitment efficiency",
+      "businessImpact": "Longer hiring cycles can delay workforce planning and increase the risk of losing high-quality candidates.",
+      "riskIfIgnored": "Critical positions may remain vacant longer, affecting business capacity and project delivery.",
+      "keyFindings": [
+        "Time-to-hire increased by 28%",
+        "Specialized technical roles are most affected",
+        "Hiring manager response delays are creating bottlenecks"
+      ],
+      "contributingFactors": [
+        "Prolonged interview loops",
+        "Delayed hiring manager feedback"
+      ]
+    }
+  },
+
+  {
+    "id": 5,
+    "role": "HR",
+    "severity": "Low",
+    "title": "Training Completion Improved",
+    "metric": "Mandatory Training Compliance",
+    "change": "+35%",
+    "trend": "up",
+    "region": "Global Workforce",
+    "summary": "Compliance and leadership development course completions exceeded quarterly benchmarks.",
+    "whatHappened": "Mandatory training completion increased by 35% across the Global Workforce and exceeded quarterly benchmarks.",
+    "rootCause": "The rollout of modular micro-learning modules and automated milestone reminders improved employee participation.",
+    "recommendations": [
+      {
+        "action": "Expand micro-learning modules to technical upskilling programs",
+        "feasibility": "Medium"
+      },
+      {
+        "action": "Recognize top-completing departments in company-wide all-hands",
+        "feasibility": "Easy"
+      },
+      {
+        "action": "Incorporate training completion metrics into quarterly performance reviews",
+        "feasibility": "Hard"
+      }
+    ],
+    "category": "Engagement",
+    "timestamp": "5 hours ago",
+    "impactScore": 52,
+    "ragContext": {
+      "roleFocus": "Learning, development, and employee engagement",
+      "businessImpact": "Improved training participation can strengthen compliance and workforce capability.",
+      "riskIfIgnored": "The organization may fail to scale the successful learning model to other development areas.",
+      "keyFindings": [
+        "Training completion improved by 35%",
+        "Quarterly benchmarks were exceeded",
+        "Micro-learning and reminders increased participation"
+      ],
+      "contributingFactors": [
+        "Modular micro-learning",
+        "Automated milestone nudges"
+      ]
+    }
+  }
+],
+  "Manager": [
+    {
+      "id": "MANAGER-001",
+      "role": "Manager",
+      "roleDisplayName": "Manager",
+      "severity": "High",
+      "title": "Cross-Functional Response: Delhi NCR Apparel Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+38.7%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Apparel",
+      "whatHappened": "A statistically significant sales spike occurred in Delhi NCR for Apparel between March 5-8, 2026, with units sold increasing by 30.4% and revenue by 32.5% compared to the baseline. Web traffic increased significantly, and promotions were active during this period. Marketing spend increased sharply, and there was a notable rise in paid sessions and conversions.",
+      "rootCause": "Primary business hypothesis: Sponsored campaigns drove increased sales. Coordinate owners and validate the evidence before scaling the response.",
+      "rootCauseConfidence": 0.7,
+      "roleFocus": "Cross-functional execution and ownership.",
+      "recommendations": [
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Easy",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The investigation highlights that the sales spike is likely driven by increased marketing spend and promotional activity, particularly the 'CAMP-GT011' campaign, which is associated with higher paid traffic and conversions."
+        },
+        {
+          "text": "Increase inventory readiness for a demand spike",
+          "feasibility": "Medium",
+          "actionId": "A35",
+          "domain": "Supply Chain",
+          "why": "The investigation shows a significant sales spike, and the inventory diagnostics show no significant changes in stock levels, suggesting that inventory may not be a limiting factor during the movement."
+        }
+      ],
+      "sourceMovementIndex": 0,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Apparel spike",
+        "factualSummary": "A statistically significant sales spike occurred in Delhi NCR for Apparel between March 5-8, 2026, with units sold increasing by 30.4% and revenue by 32.5% compared to the baseline. Web traffic increased significantly, and promotions were active during this period. Marketing spend increased sharply, and there was a notable rise in paid sessions and conversions.",
+        "topHypothesis": "Sponsored campaigns drove increased sales",
+        "hypothesisConfidence": 0.7,
+        "roleSpecificInterpretation": "Primary business hypothesis: Sponsored campaigns drove increased sales. Coordinate owners and validate the evidence before scaling the response.",
+        "roleFocus": "Cross-functional execution and ownership.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "MANAGER-003",
+      "role": "Manager",
+      "roleDisplayName": "Manager",
+      "severity": "High",
+      "title": "Cross-Functional Response: Delhi NCR Electronics Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+44.0%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "whatHappened": "A significant sales spike occurred in Delhi NCR for Electronics between February 1-2, 2026, with units sold increasing by 39.84% and revenue by 38.82% compared to the previous week. The spike was not accompanied by changes in pricing, promotions, or inventory levels. Web traffic increased significantly, and there was a surge in organic social media mentions, suggesting a viral or organic demand increase.",
+      "rootCause": "Primary business hypothesis: Organic social media virality drove increased demand. Coordinate owners and validate the evidence before scaling the response.",
+      "rootCauseConfidence": 0.7,
+      "roleFocus": "Cross-functional execution and ownership.",
+      "recommendations": [
+        {
+          "text": "Identify the source of organic demand",
+          "feasibility": "Easy",
+          "actionId": "A37",
+          "domain": "Marketing",
+          "why": "The investigation highlights a surge in organic social media mentions and increased online attention, suggesting a viral or organic demand increase. Identifying the source of this demand can help understand the root cause and potentially replicate the effect."
+        },
+        {
+          "text": "Amplify successful organic content",
+          "feasibility": "Medium",
+          "actionId": "A38",
+          "domain": "Marketing",
+          "why": "The investigation indicates that the product is suddenly 'all over my feed' and 'suddenly everywhere online', suggesting that the product is gaining traction through organic content. Amplifying this content can help sustain or increase the demand."
+        }
+      ],
+      "sourceMovementIndex": 2,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Electronics spike",
+        "factualSummary": "A significant sales spike occurred in Delhi NCR for Electronics between February 1-2, 2026, with units sold increasing by 39.84% and revenue by 38.82% compared to the previous week. The spike was not accompanied by changes in pricing, promotions, or inventory levels. Web traffic increased significantly, and there was a surge in organic social media mentions, suggesting a viral or organic demand increase.",
+        "topHypothesis": "Organic social media virality drove increased demand",
+        "hypothesisConfidence": 0.7,
+        "roleSpecificInterpretation": "Primary business hypothesis: Organic social media virality drove increased demand. Coordinate owners and validate the evidence before scaling the response.",
+        "roleFocus": "Cross-functional execution and ownership.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "MANAGER-002",
+      "role": "Manager",
+      "roleDisplayName": "Manager",
+      "severity": "Medium",
+      "title": "Cross-Functional Response: Delhi NCR Electronics Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+15.2%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "whatHappened": "A spike in sales occurred on 2026-01-10 in Delhi NCR for Electronics, with a z-score of 2.83 and a 15.25% revenue deviation. Inventory and logistics metrics remained stable, while web traffic and conversion rates increased. Competitor discounting increased, and marketing spend increased slightly.",
+      "rootCause": "Primary business hypothesis: Increased web traffic and conversion rates drove the sales spike. Coordinate owners and validate the evidence before scaling the response.",
+      "rootCauseConfidence": 0.6,
+      "roleFocus": "Cross-functional execution and ownership.",
+      "recommendations": [
+        {
+          "text": "Identify the source of organic demand",
+          "feasibility": "Easy",
+          "actionId": "A37",
+          "domain": "Marketing",
+          "why": "The spike in sales is associated with increased web traffic and conversion rates, and unstructured evidence suggests a sudden surge in demand due to organic social discussion."
+        },
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Medium",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The marketing spend increased slightly, and the conversion rate increased, suggesting that the strongest-performing campaign may be contributing to the sales spike."
+        }
+      ],
+      "sourceMovementIndex": 1,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Electronics spike",
+        "factualSummary": "A spike in sales occurred on 2026-01-10 in Delhi NCR for Electronics, with a z-score of 2.83 and a 15.25% revenue deviation. Inventory and logistics metrics remained stable, while web traffic and conversion rates increased. Competitor discounting increased, and marketing spend increased slightly.",
+        "topHypothesis": "Increased web traffic and conversion rates drove the sales spike",
+        "hypothesisConfidence": 0.6,
+        "roleSpecificInterpretation": "Primary business hypothesis: Increased web traffic and conversion rates drove the sales spike. Coordinate owners and validate the evidence before scaling the response.",
+        "roleFocus": "Cross-functional execution and ownership.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "MANAGER-004",
+      "role": "Manager",
+      "roleDisplayName": "Manager",
+      "severity": "Medium",
+      "title": "Cross-Functional Response: Delhi NCR Electronics Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+17.3%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "whatHappened": "A spike in sales occurred on 2026-02-28 in Delhi NCR for Electronics, with a z-score of 2.587. The movement was isolated to one day, with no prior sales anomalies. Inventory, logistics, and pricing remained stable. Web traffic increased, but conversion rate dropped. Marketing spend increased in the prior week, but conversion rates declined in the following week.",
+      "rootCause": "Primary business hypothesis: Increased web traffic led to higher units sold. Coordinate owners and validate the evidence before scaling the response.",
+      "rootCauseConfidence": 0.6,
+      "roleFocus": "Cross-functional execution and ownership.",
+      "recommendations": [
+        {
+          "text": "Identify the source of organic demand",
+          "feasibility": "Easy",
+          "actionId": "A37",
+          "domain": "Marketing",
+          "why": "The investigated movement shows a spike in sales with increased web traffic and social mentions, suggesting organic demand may be driving the increase."
+        },
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Medium",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The marketing spend increased in the prior week, and the investigation suggests this may have driven the sales spike."
+        }
+      ],
+      "sourceMovementIndex": 3,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Electronics spike",
+        "factualSummary": "A spike in sales occurred on 2026-02-28 in Delhi NCR for Electronics, with a z-score of 2.587. The movement was isolated to one day, with no prior sales anomalies. Inventory, logistics, and pricing remained stable. Web traffic increased, but conversion rate dropped. Marketing spend increased in the prior week, but conversion rates declined in the following week.",
+        "topHypothesis": "Increased web traffic led to higher units sold",
+        "hypothesisConfidence": 0.6,
+        "roleSpecificInterpretation": "Primary business hypothesis: Increased web traffic led to higher units sold. Coordinate owners and validate the evidence before scaling the response.",
+        "roleFocus": "Cross-functional execution and ownership.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "MANAGER-005",
+      "role": "Manager",
+      "roleDisplayName": "Manager",
+      "severity": "Medium",
+      "title": "Cross-Functional Response: Gujarat Electronics Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+17.2%",
+      "trend": "up",
+      "region": "Gujarat",
+      "category": "Electronics",
+      "whatHappened": "A single day (2026-03-22) in Gujarat saw a material sales spike in the Electronics category, with units sold increasing by 9.15% and revenue by 10.13% compared to the trailing baseline. Inventory and logistics metrics remained stable, pricing increased slightly, web traffic decreased slightly but conversion rate increased, and competitor pricing decreased. Marketing spend showed a 9.98% increase in the week starting 2026-03-19, but no promotions were active.",
+      "rootCause": "Primary business hypothesis: Increased marketing spend in the week prior led to higher customer awareness and conversions.. Coordinate owners and validate the evidence before scaling the response.",
+      "rootCauseConfidence": 0.6,
+      "roleFocus": "Cross-functional execution and ownership.",
+      "recommendations": [
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Medium",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The week starting 2026-03-19 showed a 9.98% increase in marketing spend, which may have contributed to the sales spike. The conversion rate increased from 0.0387 to 0.0528, suggesting a positive response to marketing efforts."
+        },
+        {
+          "text": "Collect the missing evidence identified by the investigation",
+          "feasibility": "Easy",
+          "actionId": "A39",
+          "domain": "Analytics",
+          "why": "The investigation identified missing evidence, such as specific marketing campaign details and the direct link between marketing spend and sales spike, which are needed to validate the hypotheses."
+        }
+      ],
+      "sourceMovementIndex": 4,
+      "ragContext": {
+        "eventIdentity": "Gujarat Electronics spike",
+        "factualSummary": "A single day (2026-03-22) in Gujarat saw a material sales spike in the Electronics category, with units sold increasing by 9.15% and revenue by 10.13% compared to the trailing baseline. Inventory and logistics metrics remained stable, pricing increased slightly, web traffic decreased slightly but conversion rate increased, and competitor pricing decreased. Marketing spend showed a 9.98% increase in the week starting 2026-03-19, but no promotions were active.",
+        "topHypothesis": "Increased marketing spend in the week prior led to higher customer awareness and conversions.",
+        "hypothesisConfidence": 0.6,
+        "roleSpecificInterpretation": "Primary business hypothesis: Increased marketing spend in the week prior led to higher customer awareness and conversions.. Coordinate owners and validate the evidence before scaling the response.",
+        "roleFocus": "Cross-functional execution and ownership.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    }
+  ],
+  "Executive": [
+    {
+      "id": "EXECUTIVE-003",
+      "role": "Executive",
+      "roleDisplayName": "Executive / Director",
+      "severity": "High",
+      "title": "Growth Opportunity: Delhi NCR Electronics Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+44.0%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "whatHappened": "A significant sales spike occurred in Delhi NCR for Electronics between February 1-2, 2026, with units sold increasing by 39.84% and revenue by 38.82% compared to the previous week. The spike was not accompanied by changes in pricing, promotions, or inventory levels. Web traffic increased significantly, and there was a surge in organic social media mentions, suggesting a viral or organic demand increase.",
+      "rootCause": "Leading hypothesis: Organic social media virality drove increased demand. Executive decision: determine whether the signal is scalable and worth additional investment.",
+      "rootCauseConfidence": 0.7,
+      "roleFocus": "Strategic growth, risk, investment and prioritization.",
+      "recommendations": [
+        {
+          "text": "Identify the source of organic demand",
+          "feasibility": "Easy",
+          "actionId": "A37",
+          "domain": "Marketing",
+          "why": "The investigation highlights a surge in organic social media mentions and increased online attention, suggesting a viral or organic demand increase. Identifying the source of this demand can help understand the root cause and potentially replicate the effect."
+        },
+        {
+          "text": "Amplify successful organic content",
+          "feasibility": "Medium",
+          "actionId": "A38",
+          "domain": "Marketing",
+          "why": "The investigation indicates that the product is suddenly 'all over my feed' and 'suddenly everywhere online', suggesting that the product is gaining traction through organic content. Amplifying this content can help sustain or increase the demand."
+        },
+        {
+          "text": "Review whether the demand signal is repeatable before committing additional strategic investment.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Prioritize the highest-confidence growth driver and assign an accountable owner.",
+          "feasibility": "Easy"
+        }
+      ],
+      "sourceMovementIndex": 2,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Electronics spike",
+        "factualSummary": "A significant sales spike occurred in Delhi NCR for Electronics between February 1-2, 2026, with units sold increasing by 39.84% and revenue by 38.82% compared to the previous week. The spike was not accompanied by changes in pricing, promotions, or inventory levels. Web traffic increased significantly, and there was a surge in organic social media mentions, suggesting a viral or organic demand increase.",
+        "topHypothesis": "Organic social media virality drove increased demand",
+        "hypothesisConfidence": 0.7,
+        "roleSpecificInterpretation": "Leading hypothesis: Organic social media virality drove increased demand. Executive decision: determine whether the signal is scalable and worth additional investment.",
+        "roleFocus": "Strategic growth, risk, investment and prioritization.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "EXECUTIVE-001",
+      "role": "Executive",
+      "roleDisplayName": "Executive / Director",
+      "severity": "High",
+      "title": "Growth Opportunity: Delhi NCR Apparel Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+38.7%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Apparel",
+      "whatHappened": "A statistically significant sales spike occurred in Delhi NCR for Apparel between March 5-8, 2026, with units sold increasing by 30.4% and revenue by 32.5% compared to the baseline. Web traffic increased significantly, and promotions were active during this period. Marketing spend increased sharply, and there was a notable rise in paid sessions and conversions.",
+      "rootCause": "Leading hypothesis: Sponsored campaigns drove increased sales. Executive decision: determine whether the signal is scalable and worth additional investment.",
+      "rootCauseConfidence": 0.7,
+      "roleFocus": "Strategic growth, risk, investment and prioritization.",
+      "recommendations": [
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Easy",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The investigation highlights that the sales spike is likely driven by increased marketing spend and promotional activity, particularly the 'CAMP-GT011' campaign, which is associated with higher paid traffic and conversions."
+        },
+        {
+          "text": "Collect the missing evidence identified by the investigation",
+          "feasibility": "Medium",
+          "actionId": "A39",
+          "domain": "Analytics",
+          "why": "The investigation identified missing evidence, particularly linking specific sponsored campaigns to the sales spike, which is necessary to confirm the hypothesis."
+        },
+        {
+          "text": "Review whether the demand signal is repeatable before committing additional strategic investment.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Prioritize the highest-confidence growth driver and assign an accountable owner.",
+          "feasibility": "Easy"
+        }
+      ],
+      "sourceMovementIndex": 0,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Apparel spike",
+        "factualSummary": "A statistically significant sales spike occurred in Delhi NCR for Apparel between March 5-8, 2026, with units sold increasing by 30.4% and revenue by 32.5% compared to the baseline. Web traffic increased significantly, and promotions were active during this period. Marketing spend increased sharply, and there was a notable rise in paid sessions and conversions.",
+        "topHypothesis": "Sponsored campaigns drove increased sales",
+        "hypothesisConfidence": 0.7,
+        "roleSpecificInterpretation": "Leading hypothesis: Sponsored campaigns drove increased sales. Executive decision: determine whether the signal is scalable and worth additional investment.",
+        "roleFocus": "Strategic growth, risk, investment and prioritization.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "EXECUTIVE-005",
+      "role": "Executive",
+      "roleDisplayName": "Executive / Director",
+      "severity": "Medium",
+      "title": "Growth Opportunity: Gujarat Electronics Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+17.2%",
+      "trend": "up",
+      "region": "Gujarat",
+      "category": "Electronics",
+      "whatHappened": "A single day (2026-03-22) in Gujarat saw a material sales spike in the Electronics category, with units sold increasing by 9.15% and revenue by 10.13% compared to the trailing baseline. Inventory and logistics metrics remained stable, pricing increased slightly, web traffic decreased slightly but conversion rate increased, and competitor pricing decreased. Marketing spend showed a 9.98% increase in the week starting 2026-03-19, but no promotions were active.",
+      "rootCause": "Leading hypothesis: Increased marketing spend in the week prior led to higher customer awareness and conversions.. Executive decision: determine whether the signal is scalable and worth additional investment.",
+      "rootCauseConfidence": 0.6,
+      "roleFocus": "Strategic growth, risk, investment and prioritization.",
+      "recommendations": [
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Medium",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The week starting 2026-03-19 showed a 9.98% increase in marketing spend, which may have contributed to the sales spike. The conversion rate increased from 0.0387 to 0.0528, suggesting a positive response to marketing efforts."
+        },
+        {
+          "text": "Collect the missing evidence identified by the investigation",
+          "feasibility": "Easy",
+          "actionId": "A39",
+          "domain": "Analytics",
+          "why": "The investigation identified missing evidence, such as specific marketing campaign details and the direct link between marketing spend and sales spike, which are needed to validate the hypotheses."
+        },
+        {
+          "text": "Review whether the demand signal is repeatable before committing additional strategic investment.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Prioritize the highest-confidence growth driver and assign an accountable owner.",
+          "feasibility": "Easy"
+        }
+      ],
+      "sourceMovementIndex": 4,
+      "ragContext": {
+        "eventIdentity": "Gujarat Electronics spike",
+        "factualSummary": "A single day (2026-03-22) in Gujarat saw a material sales spike in the Electronics category, with units sold increasing by 9.15% and revenue by 10.13% compared to the trailing baseline. Inventory and logistics metrics remained stable, pricing increased slightly, web traffic decreased slightly but conversion rate increased, and competitor pricing decreased. Marketing spend showed a 9.98% increase in the week starting 2026-03-19, but no promotions were active.",
+        "topHypothesis": "Increased marketing spend in the week prior led to higher customer awareness and conversions.",
+        "hypothesisConfidence": 0.6,
+        "roleSpecificInterpretation": "Leading hypothesis: Increased marketing spend in the week prior led to higher customer awareness and conversions.. Executive decision: determine whether the signal is scalable and worth additional investment.",
+        "roleFocus": "Strategic growth, risk, investment and prioritization.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "EXECUTIVE-004",
+      "role": "Executive",
+      "roleDisplayName": "Executive / Director",
+      "severity": "Medium",
+      "title": "Growth Opportunity: Delhi NCR Electronics Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+17.3%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "whatHappened": "A spike in sales occurred on 2026-02-28 in Delhi NCR for Electronics, with a z-score of 2.587. The movement was isolated to one day, with no prior sales anomalies. Inventory, logistics, and pricing remained stable. Web traffic increased, but conversion rate dropped. Marketing spend increased in the prior week, but conversion rates declined in the following week.",
+      "rootCause": "Leading hypothesis: Increased web traffic led to higher units sold. Executive decision: determine whether the signal is scalable and worth additional investment.",
+      "rootCauseConfidence": 0.6,
+      "roleFocus": "Strategic growth, risk, investment and prioritization.",
+      "recommendations": [
+        {
+          "text": "Identify the source of organic demand",
+          "feasibility": "Easy",
+          "actionId": "A37",
+          "domain": "Marketing",
+          "why": "The investigated movement shows a spike in sales with increased web traffic and social mentions, suggesting organic demand may be driving the increase."
+        },
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Medium",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The marketing spend increased in the prior week, and the investigation suggests this may have driven the sales spike."
+        },
+        {
+          "text": "Review whether the demand signal is repeatable before committing additional strategic investment.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Prioritize the highest-confidence growth driver and assign an accountable owner.",
+          "feasibility": "Easy"
+        }
+      ],
+      "sourceMovementIndex": 3,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Electronics spike",
+        "factualSummary": "A spike in sales occurred on 2026-02-28 in Delhi NCR for Electronics, with a z-score of 2.587. The movement was isolated to one day, with no prior sales anomalies. Inventory, logistics, and pricing remained stable. Web traffic increased, but conversion rate dropped. Marketing spend increased in the prior week, but conversion rates declined in the following week.",
+        "topHypothesis": "Increased web traffic led to higher units sold",
+        "hypothesisConfidence": 0.6,
+        "roleSpecificInterpretation": "Leading hypothesis: Increased web traffic led to higher units sold. Executive decision: determine whether the signal is scalable and worth additional investment.",
+        "roleFocus": "Strategic growth, risk, investment and prioritization.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    }
+  ],
+  "Retail": [
+    {
+      "id": "RETAIL-001",
+      "role": "Retail",
+      "roleDisplayName": "Retail Manager",
+      "severity": "High",
+      "title": "Demand & Availability: Delhi NCR Apparel Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+38.7%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Apparel",
+      "whatHappened": "A statistically significant sales spike occurred in Delhi NCR for Apparel between March 5-8, 2026, with units sold increasing by 30.4% and revenue by 32.5% compared to the baseline. Web traffic increased significantly, and promotions were active during this period. Marketing spend increased sharply, and there was a notable rise in paid sessions and conversions.",
+      "rootCause": "Demand driver under investigation: Sponsored campaigns drove increased sales. Retail priority: convert elevated demand without availability or execution issues.",
+      "rootCauseConfidence": 0.7,
+      "roleFocus": "Demand execution, customer availability and frontline readiness.",
+      "recommendations": [
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Easy",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The investigation highlights that the sales spike is likely driven by increased marketing spend and promotional activity, particularly the 'CAMP-GT011' campaign, which is associated with higher paid traffic and conversions."
+        },
+        {
+          "text": "Increase inventory readiness for a demand spike",
+          "feasibility": "Medium",
+          "actionId": "A35",
+          "domain": "Supply Chain",
+          "why": "The investigation shows a significant sales spike, and the inventory diagnostics show no significant changes in stock levels, suggesting that inventory may not be a limiting factor during the movement."
+        },
+        {
+          "text": "Verify product availability and replenishment readiness while demand remains elevated.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Prepare frontline teams for sustained customer demand if the spike continues.",
+          "feasibility": "Medium"
+        }
+      ],
+      "sourceMovementIndex": 0,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Apparel spike",
+        "factualSummary": "A statistically significant sales spike occurred in Delhi NCR for Apparel between March 5-8, 2026, with units sold increasing by 30.4% and revenue by 32.5% compared to the baseline. Web traffic increased significantly, and promotions were active during this period. Marketing spend increased sharply, and there was a notable rise in paid sessions and conversions.",
+        "topHypothesis": "Sponsored campaigns drove increased sales",
+        "hypothesisConfidence": 0.7,
+        "roleSpecificInterpretation": "Demand driver under investigation: Sponsored campaigns drove increased sales. Retail priority: convert elevated demand without availability or execution issues.",
+        "roleFocus": "Demand execution, customer availability and frontline readiness.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "RETAIL-003",
+      "role": "Retail",
+      "roleDisplayName": "Retail Manager",
+      "severity": "High",
+      "title": "Demand & Availability: Delhi NCR Electronics Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+44.0%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "whatHappened": "A significant sales spike occurred in Delhi NCR for Electronics between February 1-2, 2026, with units sold increasing by 39.84% and revenue by 38.82% compared to the previous week. The spike was not accompanied by changes in pricing, promotions, or inventory levels. Web traffic increased significantly, and there was a surge in organic social media mentions, suggesting a viral or organic demand increase.",
+      "rootCause": "Demand driver under investigation: Organic social media virality drove increased demand. Retail priority: convert elevated demand without availability or execution issues.",
+      "rootCauseConfidence": 0.7,
+      "roleFocus": "Demand execution, customer availability and frontline readiness.",
+      "recommendations": [
+        {
+          "text": "Identify the source of organic demand",
+          "feasibility": "Easy",
+          "actionId": "A37",
+          "domain": "Marketing",
+          "why": "The investigation highlights a surge in organic social media mentions and increased online attention, suggesting a viral or organic demand increase. Identifying the source of this demand can help understand the root cause and potentially replicate the effect."
+        },
+        {
+          "text": "Amplify successful organic content",
+          "feasibility": "Medium",
+          "actionId": "A38",
+          "domain": "Marketing",
+          "why": "The investigation indicates that the product is suddenly 'all over my feed' and 'suddenly everywhere online', suggesting that the product is gaining traction through organic content. Amplifying this content can help sustain or increase the demand."
+        },
+        {
+          "text": "Verify product availability and replenishment readiness while demand remains elevated.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Prepare frontline teams for sustained customer demand if the spike continues.",
+          "feasibility": "Medium"
+        }
+      ],
+      "sourceMovementIndex": 2,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Electronics spike",
+        "factualSummary": "A significant sales spike occurred in Delhi NCR for Electronics between February 1-2, 2026, with units sold increasing by 39.84% and revenue by 38.82% compared to the previous week. The spike was not accompanied by changes in pricing, promotions, or inventory levels. Web traffic increased significantly, and there was a surge in organic social media mentions, suggesting a viral or organic demand increase.",
+        "topHypothesis": "Organic social media virality drove increased demand",
+        "hypothesisConfidence": 0.7,
+        "roleSpecificInterpretation": "Demand driver under investigation: Organic social media virality drove increased demand. Retail priority: convert elevated demand without availability or execution issues.",
+        "roleFocus": "Demand execution, customer availability and frontline readiness.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "RETAIL-002",
+      "role": "Retail",
+      "roleDisplayName": "Retail Manager",
+      "severity": "Medium",
+      "title": "Demand & Availability: Delhi NCR Electronics Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+15.2%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "whatHappened": "A spike in sales occurred on 2026-01-10 in Delhi NCR for Electronics, with a z-score of 2.83 and a 15.25% revenue deviation. Inventory and logistics metrics remained stable, while web traffic and conversion rates increased. Competitor discounting increased, and marketing spend increased slightly.",
+      "rootCause": "Demand driver under investigation: Increased web traffic and conversion rates drove the sales spike. Retail priority: convert elevated demand without availability or execution issues.",
+      "rootCauseConfidence": 0.6,
+      "roleFocus": "Demand execution, customer availability and frontline readiness.",
+      "recommendations": [
+        {
+          "text": "Identify the source of organic demand",
+          "feasibility": "Easy",
+          "actionId": "A37",
+          "domain": "Marketing",
+          "why": "The spike in sales is associated with increased web traffic and conversion rates, and unstructured evidence suggests a sudden surge in demand due to organic social discussion."
+        },
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Medium",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The marketing spend increased slightly, and the conversion rate increased, suggesting that the strongest-performing campaign may be contributing to the sales spike."
+        },
+        {
+          "text": "Verify product availability and replenishment readiness while demand remains elevated.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Prepare frontline teams for sustained customer demand if the spike continues.",
+          "feasibility": "Medium"
+        }
+      ],
+      "sourceMovementIndex": 1,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Electronics spike",
+        "factualSummary": "A spike in sales occurred on 2026-01-10 in Delhi NCR for Electronics, with a z-score of 2.83 and a 15.25% revenue deviation. Inventory and logistics metrics remained stable, while web traffic and conversion rates increased. Competitor discounting increased, and marketing spend increased slightly.",
+        "topHypothesis": "Increased web traffic and conversion rates drove the sales spike",
+        "hypothesisConfidence": 0.6,
+        "roleSpecificInterpretation": "Demand driver under investigation: Increased web traffic and conversion rates drove the sales spike. Retail priority: convert elevated demand without availability or execution issues.",
+        "roleFocus": "Demand execution, customer availability and frontline readiness.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "RETAIL-005",
+      "role": "Retail",
+      "roleDisplayName": "Retail Manager",
+      "severity": "Medium",
+      "title": "Demand & Availability: Gujarat Electronics Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+17.2%",
+      "trend": "up",
+      "region": "Gujarat",
+      "category": "Electronics",
+      "whatHappened": "A single day (2026-03-22) in Gujarat saw a material sales spike in the Electronics category, with units sold increasing by 9.15% and revenue by 10.13% compared to the trailing baseline. Inventory and logistics metrics remained stable, pricing increased slightly, web traffic decreased slightly but conversion rate increased, and competitor pricing decreased. Marketing spend showed a 9.98% increase in the week starting 2026-03-19, but no promotions were active.",
+      "rootCause": "Demand driver under investigation: Increased marketing spend in the week prior led to higher customer awareness and conversions.. Retail priority: convert elevated demand without availability or execution issues.",
+      "rootCauseConfidence": 0.6,
+      "roleFocus": "Demand execution, customer availability and frontline readiness.",
+      "recommendations": [
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Medium",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The week starting 2026-03-19 showed a 9.98% increase in marketing spend, which may have contributed to the sales spike. The conversion rate increased from 0.0387 to 0.0528, suggesting a positive response to marketing efforts."
+        },
+        {
+          "text": "Collect the missing evidence identified by the investigation",
+          "feasibility": "Easy",
+          "actionId": "A39",
+          "domain": "Analytics",
+          "why": "The investigation identified missing evidence, such as specific marketing campaign details and the direct link between marketing spend and sales spike, which are needed to validate the hypotheses."
+        },
+        {
+          "text": "Verify product availability and replenishment readiness while demand remains elevated.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Prepare frontline teams for sustained customer demand if the spike continues.",
+          "feasibility": "Medium"
+        }
+      ],
+      "sourceMovementIndex": 4,
+      "ragContext": {
+        "eventIdentity": "Gujarat Electronics spike",
+        "factualSummary": "A single day (2026-03-22) in Gujarat saw a material sales spike in the Electronics category, with units sold increasing by 9.15% and revenue by 10.13% compared to the trailing baseline. Inventory and logistics metrics remained stable, pricing increased slightly, web traffic decreased slightly but conversion rate increased, and competitor pricing decreased. Marketing spend showed a 9.98% increase in the week starting 2026-03-19, but no promotions were active.",
+        "topHypothesis": "Increased marketing spend in the week prior led to higher customer awareness and conversions.",
+        "hypothesisConfidence": 0.6,
+        "roleSpecificInterpretation": "Demand driver under investigation: Increased marketing spend in the week prior led to higher customer awareness and conversions.. Retail priority: convert elevated demand without availability or execution issues.",
+        "roleFocus": "Demand execution, customer availability and frontline readiness.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    }
+  ],
+  "Finance": [
+    {
+      "id": "FINANCE-001",
+      "role": "Finance",
+      "roleDisplayName": "Finance Analyst",
+      "severity": "High",
+      "title": "Revenue Impact: Delhi NCR Apparel Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+38.7%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Apparel",
+      "whatHappened": "A statistically significant sales spike occurred in Delhi NCR for Apparel between March 5-8, 2026, with units sold increasing by 30.4% and revenue by 32.5% compared to the baseline. Web traffic increased significantly, and promotions were active during this period. Marketing spend increased sharply, and there was a notable rise in paid sessions and conversions.",
+      "rootCause": "Financial driver under investigation: Sponsored campaigns drove increased sales. Finance priority: validate incremental revenue, cost and ROI before scaling spend.",
+      "rootCauseConfidence": 0.7,
+      "roleFocus": "Revenue impact, spend effectiveness, pricing and return on investment.",
+      "recommendations": [
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Easy",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The investigation highlights that the sales spike is likely driven by increased marketing spend and promotional activity, particularly the 'CAMP-GT011' campaign, which is associated with higher paid traffic and conversions."
+        },
+        {
+          "text": "Collect the missing evidence identified by the investigation",
+          "feasibility": "Medium",
+          "actionId": "A39",
+          "domain": "Analytics",
+          "why": "The investigation identified missing evidence, particularly linking specific sponsored campaigns to the sales spike, which is necessary to confirm the hypothesis."
+        },
+        {
+          "text": "Quantify incremental revenue against incremental marketing or pricing changes.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Validate ROI before approving additional budget allocation.",
+          "feasibility": "Medium"
+        }
+      ],
+      "sourceMovementIndex": 0,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Apparel spike",
+        "factualSummary": "A statistically significant sales spike occurred in Delhi NCR for Apparel between March 5-8, 2026, with units sold increasing by 30.4% and revenue by 32.5% compared to the baseline. Web traffic increased significantly, and promotions were active during this period. Marketing spend increased sharply, and there was a notable rise in paid sessions and conversions.",
+        "topHypothesis": "Sponsored campaigns drove increased sales",
+        "hypothesisConfidence": 0.7,
+        "roleSpecificInterpretation": "Financial driver under investigation: Sponsored campaigns drove increased sales. Finance priority: validate incremental revenue, cost and ROI before scaling spend.",
+        "roleFocus": "Revenue impact, spend effectiveness, pricing and return on investment.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "FINANCE-003",
+      "role": "Finance",
+      "roleDisplayName": "Finance Analyst",
+      "severity": "High",
+      "title": "Revenue Impact: Delhi NCR Electronics Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+44.0%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "whatHappened": "A significant sales spike occurred in Delhi NCR for Electronics between February 1-2, 2026, with units sold increasing by 39.84% and revenue by 38.82% compared to the previous week. The spike was not accompanied by changes in pricing, promotions, or inventory levels. Web traffic increased significantly, and there was a surge in organic social media mentions, suggesting a viral or organic demand increase.",
+      "rootCause": "Financial driver under investigation: Organic social media virality drove increased demand. Finance priority: validate incremental revenue, cost and ROI before scaling spend.",
+      "rootCauseConfidence": 0.7,
+      "roleFocus": "Revenue impact, spend effectiveness, pricing and return on investment.",
+      "recommendations": [
+        {
+          "text": "Identify the source of organic demand",
+          "feasibility": "Easy",
+          "actionId": "A37",
+          "domain": "Marketing",
+          "why": "The investigation highlights a surge in organic social media mentions and increased online attention, suggesting a viral or organic demand increase. Identifying the source of this demand can help understand the root cause and potentially replicate the effect."
+        },
+        {
+          "text": "Amplify successful organic content",
+          "feasibility": "Medium",
+          "actionId": "A38",
+          "domain": "Marketing",
+          "why": "The investigation indicates that the product is suddenly 'all over my feed' and 'suddenly everywhere online', suggesting that the product is gaining traction through organic content. Amplifying this content can help sustain or increase the demand."
+        },
+        {
+          "text": "Quantify incremental revenue against incremental marketing or pricing changes.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Validate ROI before approving additional budget allocation.",
+          "feasibility": "Medium"
+        }
+      ],
+      "sourceMovementIndex": 2,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Electronics spike",
+        "factualSummary": "A significant sales spike occurred in Delhi NCR for Electronics between February 1-2, 2026, with units sold increasing by 39.84% and revenue by 38.82% compared to the previous week. The spike was not accompanied by changes in pricing, promotions, or inventory levels. Web traffic increased significantly, and there was a surge in organic social media mentions, suggesting a viral or organic demand increase.",
+        "topHypothesis": "Organic social media virality drove increased demand",
+        "hypothesisConfidence": 0.7,
+        "roleSpecificInterpretation": "Financial driver under investigation: Organic social media virality drove increased demand. Finance priority: validate incremental revenue, cost and ROI before scaling spend.",
+        "roleFocus": "Revenue impact, spend effectiveness, pricing and return on investment.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "FINANCE-005",
+      "role": "Finance",
+      "roleDisplayName": "Finance Analyst",
+      "severity": "Medium",
+      "title": "Revenue Impact: Gujarat Electronics Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+17.2%",
+      "trend": "up",
+      "region": "Gujarat",
+      "category": "Electronics",
+      "whatHappened": "A single day (2026-03-22) in Gujarat saw a material sales spike in the Electronics category, with units sold increasing by 9.15% and revenue by 10.13% compared to the trailing baseline. Inventory and logistics metrics remained stable, pricing increased slightly, web traffic decreased slightly but conversion rate increased, and competitor pricing decreased. Marketing spend showed a 9.98% increase in the week starting 2026-03-19, but no promotions were active.",
+      "rootCause": "Financial driver under investigation: Increased marketing spend in the week prior led to higher customer awareness and conversions.. Finance priority: validate incremental revenue, cost and ROI before scaling spend.",
+      "rootCauseConfidence": 0.6,
+      "roleFocus": "Revenue impact, spend effectiveness, pricing and return on investment.",
+      "recommendations": [
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Medium",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The week starting 2026-03-19 showed a 9.98% increase in marketing spend, which may have contributed to the sales spike. The conversion rate increased from 0.0387 to 0.0528, suggesting a positive response to marketing efforts."
+        },
+        {
+          "text": "Run a price elasticity analysis",
+          "feasibility": "Medium",
+          "actionId": "A20",
+          "domain": "Pricing",
+          "why": "The pricing increased slightly, and the revenue increased by 10.13%. A price elasticity analysis can help determine if the price increase contributed to the revenue growth."
+        },
+        {
+          "text": "Quantify incremental revenue against incremental marketing or pricing changes.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Validate ROI before approving additional budget allocation.",
+          "feasibility": "Medium"
+        }
+      ],
+      "sourceMovementIndex": 4,
+      "ragContext": {
+        "eventIdentity": "Gujarat Electronics spike",
+        "factualSummary": "A single day (2026-03-22) in Gujarat saw a material sales spike in the Electronics category, with units sold increasing by 9.15% and revenue by 10.13% compared to the trailing baseline. Inventory and logistics metrics remained stable, pricing increased slightly, web traffic decreased slightly but conversion rate increased, and competitor pricing decreased. Marketing spend showed a 9.98% increase in the week starting 2026-03-19, but no promotions were active.",
+        "topHypothesis": "Increased marketing spend in the week prior led to higher customer awareness and conversions.",
+        "hypothesisConfidence": 0.6,
+        "roleSpecificInterpretation": "Financial driver under investigation: Increased marketing spend in the week prior led to higher customer awareness and conversions.. Finance priority: validate incremental revenue, cost and ROI before scaling spend.",
+        "roleFocus": "Revenue impact, spend effectiveness, pricing and return on investment.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "FINANCE-002",
+      "role": "Finance",
+      "roleDisplayName": "Finance Analyst",
+      "severity": "Medium",
+      "title": "Revenue Impact: Delhi NCR Electronics Sales Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+15.2%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "whatHappened": "A spike in sales occurred on 2026-01-10 in Delhi NCR for Electronics, with a z-score of 2.83 and a 15.25% revenue deviation. Inventory and logistics metrics remained stable, while web traffic and conversion rates increased. Competitor discounting increased, and marketing spend increased slightly.",
+      "rootCause": "Financial driver under investigation: Increased web traffic and conversion rates drove the sales spike. Finance priority: validate incremental revenue, cost and ROI before scaling spend.",
+      "rootCauseConfidence": 0.6,
+      "roleFocus": "Revenue impact, spend effectiveness, pricing and return on investment.",
+      "recommendations": [
+        {
+          "text": "Identify the source of organic demand",
+          "feasibility": "Easy",
+          "actionId": "A37",
+          "domain": "Marketing",
+          "why": "The spike in sales is associated with increased web traffic and conversion rates, and unstructured evidence suggests a sudden surge in demand due to organic social discussion."
+        },
+        {
+          "text": "Increase spend on the strongest-performing campaign",
+          "feasibility": "Medium",
+          "actionId": "A11",
+          "domain": "Marketing",
+          "why": "The marketing spend increased slightly, and the conversion rate increased, suggesting that the strongest-performing campaign may be contributing to the sales spike."
+        },
+        {
+          "text": "Quantify incremental revenue against incremental marketing or pricing changes.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Validate ROI before approving additional budget allocation.",
+          "feasibility": "Medium"
+        }
+      ],
+      "sourceMovementIndex": 1,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Electronics spike",
+        "factualSummary": "A spike in sales occurred on 2026-01-10 in Delhi NCR for Electronics, with a z-score of 2.83 and a 15.25% revenue deviation. Inventory and logistics metrics remained stable, while web traffic and conversion rates increased. Competitor discounting increased, and marketing spend increased slightly.",
+        "topHypothesis": "Increased web traffic and conversion rates drove the sales spike",
+        "hypothesisConfidence": 0.6,
+        "roleSpecificInterpretation": "Financial driver under investigation: Increased web traffic and conversion rates drove the sales spike. Finance priority: validate incremental revenue, cost and ROI before scaling spend.",
+        "roleFocus": "Revenue impact, spend effectiveness, pricing and return on investment.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "id": "OPERATIONS-001",
+      "role": "Operations",
+      "roleDisplayName": "Operations Manager",
+      "severity": "High",
+      "title": "Capacity Readiness: Delhi NCR Apparel Demand Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+38.7%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Apparel",
+      "whatHappened": "A statistically significant sales spike occurred in Delhi NCR for Apparel between March 5-8, 2026, with units sold increasing by 30.4% and revenue by 32.5% compared to the baseline. Web traffic increased significantly, and promotions were active during this period. Marketing spend increased sharply, and there was a notable rise in paid sessions and conversions.",
+      "rootCause": "Demand driver under investigation: Sponsored campaigns drove increased sales. Operations priority: ensure capacity can absorb repeat demand without service degradation.",
+      "rootCauseConfidence": 0.7,
+      "roleFocus": "Capacity, inventory, fulfilment and operational resilience.",
+      "recommendations": [
+        {
+          "text": "Increase inventory readiness for a demand spike",
+          "feasibility": "Medium",
+          "actionId": "A35",
+          "domain": "Supply Chain",
+          "why": "The investigation shows a significant sales spike, and the inventory diagnostics show no significant changes in stock levels, suggesting that inventory may not be a limiting factor during the movement."
+        },
+        {
+          "text": "Collect the missing evidence identified by the investigation",
+          "feasibility": "Medium",
+          "actionId": "A39",
+          "domain": "Analytics",
+          "why": "The investigation identified missing evidence, particularly linking specific sponsored campaigns to the sales spike, which is necessary to confirm the hypothesis."
+        },
+        {
+          "text": "Check inventory, inbound supply and fulfilment capacity against the elevated demand signal.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Monitor backlog and delivery performance if the demand spike persists.",
+          "feasibility": "Easy"
+        }
+      ],
+      "sourceMovementIndex": 0,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Apparel spike",
+        "factualSummary": "A statistically significant sales spike occurred in Delhi NCR for Apparel between March 5-8, 2026, with units sold increasing by 30.4% and revenue by 32.5% compared to the baseline. Web traffic increased significantly, and promotions were active during this period. Marketing spend increased sharply, and there was a notable rise in paid sessions and conversions.",
+        "topHypothesis": "Sponsored campaigns drove increased sales",
+        "hypothesisConfidence": 0.7,
+        "roleSpecificInterpretation": "Demand driver under investigation: Sponsored campaigns drove increased sales. Operations priority: ensure capacity can absorb repeat demand without service degradation.",
+        "roleFocus": "Capacity, inventory, fulfilment and operational resilience.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "OPERATIONS-003",
+      "role": "Operations",
+      "roleDisplayName": "Operations Manager",
+      "severity": "High",
+      "title": "Capacity Readiness: Delhi NCR Electronics Demand Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+44.0%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "whatHappened": "A significant sales spike occurred in Delhi NCR for Electronics between February 1-2, 2026, with units sold increasing by 39.84% and revenue by 38.82% compared to the previous week. The spike was not accompanied by changes in pricing, promotions, or inventory levels. Web traffic increased significantly, and there was a surge in organic social media mentions, suggesting a viral or organic demand increase.",
+      "rootCause": "Demand driver under investigation: Organic social media virality drove increased demand. Operations priority: ensure capacity can absorb repeat demand without service degradation.",
+      "rootCauseConfidence": 0.7,
+      "roleFocus": "Capacity, inventory, fulfilment and operational resilience.",
+      "recommendations": [
+        {
+          "text": "Collect the missing evidence identified by the investigation",
+          "feasibility": "Easy",
+          "actionId": "A39",
+          "domain": "Analytics",
+          "why": "The investigation identified a need to check for external events or trends that could have influenced consumer behavior during the spike period. Collecting this evidence will help in understanding the root cause of the demand increase."
+        },
+        {
+          "text": "Monitor whether the demand spike persists",
+          "feasibility": "Easy",
+          "actionId": "A36",
+          "domain": "Analytics",
+          "why": "The investigation suggests that the spike may be due to a temporary trend or external event. Monitoring the demand over time will help determine if the spike is a one-time event or a sustained shift."
+        },
+        {
+          "text": "Check inventory, inbound supply and fulfilment capacity against the elevated demand signal.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Monitor backlog and delivery performance if the demand spike persists.",
+          "feasibility": "Easy"
+        }
+      ],
+      "sourceMovementIndex": 2,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Electronics spike",
+        "factualSummary": "A significant sales spike occurred in Delhi NCR for Electronics between February 1-2, 2026, with units sold increasing by 39.84% and revenue by 38.82% compared to the previous week. The spike was not accompanied by changes in pricing, promotions, or inventory levels. Web traffic increased significantly, and there was a surge in organic social media mentions, suggesting a viral or organic demand increase.",
+        "topHypothesis": "Organic social media virality drove increased demand",
+        "hypothesisConfidence": 0.7,
+        "roleSpecificInterpretation": "Demand driver under investigation: Organic social media virality drove increased demand. Operations priority: ensure capacity can absorb repeat demand without service degradation.",
+        "roleFocus": "Capacity, inventory, fulfilment and operational resilience.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "OPERATIONS-005",
+      "role": "Operations",
+      "roleDisplayName": "Operations Manager",
+      "severity": "Medium",
+      "title": "Capacity Readiness: Gujarat Electronics Demand Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+17.2%",
+      "trend": "up",
+      "region": "Gujarat",
+      "category": "Electronics",
+      "whatHappened": "A single day (2026-03-22) in Gujarat saw a material sales spike in the Electronics category, with units sold increasing by 9.15% and revenue by 10.13% compared to the trailing baseline. Inventory and logistics metrics remained stable, pricing increased slightly, web traffic decreased slightly but conversion rate increased, and competitor pricing decreased. Marketing spend showed a 9.98% increase in the week starting 2026-03-19, but no promotions were active.",
+      "rootCause": "Demand driver under investigation: Increased marketing spend in the week prior led to higher customer awareness and conversions.. Operations priority: ensure capacity can absorb repeat demand without service degradation.",
+      "rootCauseConfidence": 0.6,
+      "roleFocus": "Capacity, inventory, fulfilment and operational resilience.",
+      "recommendations": [
+        {
+          "text": "Collect the missing evidence identified by the investigation",
+          "feasibility": "Easy",
+          "actionId": "A39",
+          "domain": "Analytics",
+          "why": "The investigation identified missing evidence, such as specific marketing campaign details and the direct link between marketing spend and sales spike, which are needed to validate the hypotheses."
+        },
+        {
+          "text": "Monitor the KPI against its historical baseline",
+          "feasibility": "Easy",
+          "actionId": "A43",
+          "domain": "Analytics",
+          "why": "The sales spike is a single day, and monitoring the KPI against its historical baseline can help determine if the movement is a temporary fluctuation or a sustained trend."
+        },
+        {
+          "text": "Check inventory, inbound supply and fulfilment capacity against the elevated demand signal.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Monitor backlog and delivery performance if the demand spike persists.",
+          "feasibility": "Easy"
+        }
+      ],
+      "sourceMovementIndex": 4,
+      "ragContext": {
+        "eventIdentity": "Gujarat Electronics spike",
+        "factualSummary": "A single day (2026-03-22) in Gujarat saw a material sales spike in the Electronics category, with units sold increasing by 9.15% and revenue by 10.13% compared to the trailing baseline. Inventory and logistics metrics remained stable, pricing increased slightly, web traffic decreased slightly but conversion rate increased, and competitor pricing decreased. Marketing spend showed a 9.98% increase in the week starting 2026-03-19, but no promotions were active.",
+        "topHypothesis": "Increased marketing spend in the week prior led to higher customer awareness and conversions.",
+        "hypothesisConfidence": 0.6,
+        "roleSpecificInterpretation": "Demand driver under investigation: Increased marketing spend in the week prior led to higher customer awareness and conversions.. Operations priority: ensure capacity can absorb repeat demand without service degradation.",
+        "roleFocus": "Capacity, inventory, fulfilment and operational resilience.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    },
+    {
+      "id": "OPERATIONS-004",
+      "role": "Operations",
+      "roleDisplayName": "Operations Manager",
+      "severity": "Medium",
+      "title": "Capacity Readiness: Delhi NCR Electronics Demand Spike",
+      "metric": "Revenue Deviation vs Baseline",
+      "change": "+17.3%",
+      "trend": "up",
+      "region": "Delhi NCR",
+      "category": "Electronics",
+      "whatHappened": "A spike in sales occurred on 2026-02-28 in Delhi NCR for Electronics, with a z-score of 2.587. The movement was isolated to one day, with no prior sales anomalies. Inventory, logistics, and pricing remained stable. Web traffic increased, but conversion rate dropped. Marketing spend increased in the prior week, but conversion rates declined in the following week.",
+      "rootCause": "Demand driver under investigation: Increased web traffic led to higher units sold. Operations priority: ensure capacity can absorb repeat demand without service degradation.",
+      "rootCauseConfidence": 0.6,
+      "roleFocus": "Capacity, inventory, fulfilment and operational resilience.",
+      "recommendations": [
+        {
+          "text": "Collect the missing evidence identified by the investigation",
+          "feasibility": "Medium",
+          "actionId": "A39",
+          "domain": "Analytics",
+          "why": "The investigation identified missing evidence, such as source IDs for web traffic and marketing spend, which are needed to validate the hypotheses."
+        },
+        {
+          "text": "Monitor whether the demand spike persists",
+          "feasibility": "Easy",
+          "actionId": "A36",
+          "domain": "Analytics",
+          "why": "The sales spike is isolated to one day, and the investigation suggests it may be a temporary fluctuation."
+        },
+        {
+          "text": "Check inventory, inbound supply and fulfilment capacity against the elevated demand signal.",
+          "feasibility": "Medium"
+        },
+        {
+          "text": "Monitor backlog and delivery performance if the demand spike persists.",
+          "feasibility": "Easy"
+        }
+      ],
+      "sourceMovementIndex": 3,
+      "ragContext": {
+        "eventIdentity": "Delhi NCR Electronics spike",
+        "factualSummary": "A spike in sales occurred on 2026-02-28 in Delhi NCR for Electronics, with a z-score of 2.587. The movement was isolated to one day, with no prior sales anomalies. Inventory, logistics, and pricing remained stable. Web traffic increased, but conversion rate dropped. Marketing spend increased in the prior week, but conversion rates declined in the following week.",
+        "topHypothesis": "Increased web traffic led to higher units sold",
+        "hypothesisConfidence": 0.6,
+        "roleSpecificInterpretation": "Demand driver under investigation: Increased web traffic led to higher units sold. Operations priority: ensure capacity can absorb repeat demand without service degradation.",
+        "roleFocus": "Capacity, inventory, fulfilment and operational resilience.",
+        "sourceGrounded": true,
+        "roleInterpretationDerived": true
+      }
+    }
+  ]
+}
