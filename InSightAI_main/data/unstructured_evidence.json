@@ -1,0 +1,1572 @@
+{
+  "generated_at": "2026-09-01T19:47:37.688114+00:00",
+  "source": {
+    "raw_records": 788,
+    "slm_records": 788,
+    "joined_records": 788
+  },
+  "evidence_groups": [
+    {
+      "signal_theme": "price_increase",
+      "region": "Gujarat",
+      "product_category": "Apparel",
+      "observation_count": 27,
+      "date_range": {
+        "start": "2026-01-21",
+        "end": "2026-02-03"
+      },
+      "source_distribution": {
+        "review": 7,
+        "slack": 6,
+        "social": 7,
+        "ticket": 7
+      },
+      "channel_distribution": {
+        "review": 7,
+        "internal": 6,
+        "social": 7,
+        "customer_support": 7
+      },
+      "severity_distribution": {
+        "low": 7
+      },
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-01-21": 4,
+        "2026-01-22": 3,
+        "2026-01-23": 1,
+        "2026-01-25": 4,
+        "2026-01-26": 1,
+        "2026-01-27": 1,
+        "2026-01-28": 2,
+        "2026-01-29": 1,
+        "2026-01-30": 2,
+        "2026-01-31": 2,
+        "2026-02-01": 1,
+        "2026-02-02": 1,
+        "2026-02-03": 4
+      },
+      "observation_trend": "stable",
+      "evidence_examples": [
+        {
+          "source_id": "U10102",
+          "date": "2026-01-21T08:09:00",
+          "source_type": "review",
+          "raw_input": "The product is fine, but the new price makes it harder to justify buying again.",
+          "signal": "Price increase perceived by customer",
+          "evidence": "The product is fine, but the new price makes it harder to justify buying again."
+        },
+        {
+          "source_id": "U10114",
+          "date": "2026-01-21T14:11:00",
+          "source_type": "slack",
+          "raw_input": "Regional pricing was changed this week. Marketing allocation is unchanged and stock coverage remains normal.",
+          "signal": "Regional pricing was changed",
+          "evidence": "Regional pricing was changed this week."
+        },
+        {
+          "source_id": "U10113",
+          "date": "2026-01-21T14:20:00",
+          "source_type": "slack",
+          "raw_input": "Regional pricing was changed this week. Marketing allocation is unchanged and stock coverage remains normal.",
+          "signal": "Regional pricing was changed",
+          "evidence": "Regional pricing was changed this week."
+        },
+        {
+          "source_id": "U10117",
+          "date": "2026-01-21T18:12:00",
+          "source_type": "slack",
+          "raw_input": "Pricing team confirms a list-price increase of roughly 18% for Apparel in Gujarat; no logistics or inventory incident is active.",
+          "signal": "list_price_increase",
+          "evidence": "Pricing team confirms a list-price increase of roughly 18% for Apparel in Gujarat; no logistics or inventory incident is active."
+        },
+        {
+          "source_id": "U10099",
+          "date": "2026-01-22T12:18:00",
+          "source_type": "review",
+          "raw_input": "The product is fine, but the new price makes it harder to justify buying again.",
+          "signal": "Price increase perceived by customer",
+          "evidence": "The product is fine, but the new price makes it harder to justify buying again."
+        },
+        {
+          "source_id": "U10098",
+          "date": "2026-01-22T14:42:00",
+          "source_type": "review",
+          "raw_input": "The product is fine, but the new price makes it harder to justify buying again.",
+          "signal": "Price increase perceived by customer",
+          "evidence": "The product is fine, but the new price makes it harder to justify buying again."
+        },
+        {
+          "source_id": "U10100",
+          "date": "2026-01-22T17:22:00",
+          "source_type": "review",
+          "raw_input": "The product is fine, but the new price makes it harder to justify buying again.",
+          "signal": "Price increase perceived by customer",
+          "evidence": "The product is fine, but the new price makes it harder to justify buying again."
+        },
+        {
+          "source_id": "U10106",
+          "date": "2026-01-23T13:32:00",
+          "source_type": "social",
+          "raw_input": "The price jump is getting more attention than the product itself this week.",
+          "signal": "Price jump",
+          "evidence": "The price jump is getting more attention than the product itself this week."
+        },
+        {
+          "source_id": "U10116",
+          "date": "2026-01-25T08:05:00",
+          "source_type": "slack",
+          "raw_input": "Pricing team confirms a list-price increase of roughly 18% for Apparel in Gujarat; no logistics or inventory incident is active.",
+          "signal": "list_price_increase",
+          "evidence": "Pricing team confirms a list-price increase of roughly 18% for Apparel in Gujarat; no logistics or inventory incident is active."
+        },
+        {
+          "source_id": "U10091",
+          "date": "2026-01-25T12:01:00",
+          "source_type": "ticket",
+          "raw_input": "Customer asks why the Apparel price increased; they are considering a lower-priced alternative.",
+          "signal": "customer_complaint",
+          "evidence": "Customer asks why the Apparel price increased; they are considering a lower-priced alternative."
+        }
+      ]
+    },
+    {
+      "signal_theme": "organic_viral_demand",
+      "region": "Delhi NCR",
+      "product_category": "Electronics",
+      "observation_count": 24,
+      "date_range": {
+        "start": "2026-02-01",
+        "end": "2026-02-10"
+      },
+      "source_distribution": {
+        "social": 7,
+        "news": 4,
+        "review": 7,
+        "slack": 6
+      },
+      "channel_distribution": {
+        "social": 7,
+        "external": 4,
+        "review": 7,
+        "internal": 6
+      },
+      "severity_distribution": {},
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-02-01": 2,
+        "2026-02-02": 2,
+        "2026-02-04": 3,
+        "2026-02-05": 7,
+        "2026-02-06": 4,
+        "2026-02-07": 2,
+        "2026-02-08": 1,
+        "2026-02-09": 2,
+        "2026-02-10": 1
+      },
+      "observation_trend": "decreasing",
+      "evidence_examples": [
+        {
+          "source_id": "U10173",
+          "date": "2026-02-01T13:03:00",
+          "source_type": "social",
+          "raw_input": "This Electronics product is suddenly all over my feed. I was not planning to buy it, but I ordered after seeing several posts.",
+          "signal": "Sudden surge in demand",
+          "evidence": "This Electronics product is suddenly all over my feed. I was not planning to buy it, but I ordered after seeing several posts."
+        },
+        {
+          "source_id": "U10176",
+          "date": "2026-02-01T16:10:00",
+          "source_type": "social",
+          "raw_input": "This Electronics product is suddenly all over my feed. I was not planning to buy it, but I ordered after seeing several posts.",
+          "signal": "Sudden increase in demand",
+          "evidence": "This Electronics product is suddenly all over my feed. I was not planning to buy it, but I ordered after seeing several posts."
+        },
+        {
+          "source_id": "U10187",
+          "date": "2026-02-02T08:49:00",
+          "source_type": "news",
+          "raw_input": "Consumer interest in the product has risen rapidly without a corresponding change in paid advertising.",
+          "signal": "increased consumer interest",
+          "evidence": "Consumer interest in the product has risen rapidly without a corresponding change in paid advertising."
+        },
+        {
+          "source_id": "U10174",
+          "date": "2026-02-02T18:09:00",
+          "source_type": "social",
+          "raw_input": "This Electronics product is suddenly all over my feed. I was not planning to buy it, but I ordered after seeing several posts.",
+          "signal": "Sudden surge in demand",
+          "evidence": "This Electronics product is suddenly all over my feed. I was not planning to buy it, but I ordered after seeing several posts."
+        },
+        {
+          "source_id": "U10170",
+          "date": "2026-02-04T08:45:00",
+          "source_type": "review",
+          "raw_input": "The product suddenly seems to be everywhere online, which convinced me to try it.",
+          "signal": "product_popularity_increase",
+          "evidence": "The product suddenly seems to be everywhere online, which convinced me to try it."
+        },
+        {
+          "source_id": "U10171",
+          "date": "2026-02-04T12:10:00",
+          "source_type": "review",
+          "raw_input": "The product suddenly seems to be everywhere online, which convinced me to try it.",
+          "signal": "product_visibility_increase",
+          "evidence": "The product suddenly seems to be everywhere online"
+        },
+        {
+          "source_id": "U10182",
+          "date": "2026-02-04T18:35:00",
+          "source_type": "slack",
+          "raw_input": "Social listening shows a sudden rise in unpaid mentions. No major paid-media change is recorded for the region.",
+          "signal": "sudden rise in unpaid mentions",
+          "evidence": "Social listening shows a sudden rise in unpaid mentions. No major paid-media change is recorded for the region."
+        },
+        {
+          "source_id": "U10178",
+          "date": "2026-02-05T08:53:00",
+          "source_type": "social",
+          "raw_input": "This Electronics product is suddenly all over my feed. I was not planning to buy it, but I ordered after seeing several posts.",
+          "signal": "Sudden surge in demand",
+          "evidence": "This Electronics product is suddenly all over my feed. I was not planning to buy it, but I ordered after seeing several posts."
+        },
+        {
+          "source_id": "U10189",
+          "date": "2026-02-05T11:18:00",
+          "source_type": "news",
+          "raw_input": "Online attention around the Electronics product has increased sharply in Delhi NCR, driven mainly by organic social discussion.",
+          "signal": "Increased online attention",
+          "evidence": "Online attention around the Electronics product has increased sharply in Delhi NCR, driven mainly by organic social discussion."
+        },
+        {
+          "source_id": "U10188",
+          "date": "2026-02-05T12:36:00",
+          "source_type": "news",
+          "raw_input": "Consumer interest in the product has risen rapidly without a corresponding change in paid advertising.",
+          "signal": "increased consumer interest",
+          "evidence": "Consumer interest in the product has risen rapidly without a corresponding change in paid advertising."
+        }
+      ]
+    },
+    {
+      "signal_theme": "shipment_delay",
+      "region": "Maharashtra",
+      "product_category": "Electronics",
+      "observation_count": 24,
+      "date_range": {
+        "start": "2026-02-08",
+        "end": "2026-02-21"
+      },
+      "source_distribution": {
+        "review": 7,
+        "ticket": 7,
+        "news": 4,
+        "slack": 6
+      },
+      "channel_distribution": {
+        "review": 7,
+        "customer_support": 7,
+        "external": 4,
+        "internal": 6
+      },
+      "severity_distribution": {
+        "low": 14,
+        "medium": 10
+      },
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-02-08": 1,
+        "2026-02-09": 4,
+        "2026-02-10": 2,
+        "2026-02-11": 1,
+        "2026-02-12": 2,
+        "2026-02-14": 3,
+        "2026-02-15": 2,
+        "2026-02-16": 2,
+        "2026-02-17": 2,
+        "2026-02-19": 2,
+        "2026-02-21": 3
+      },
+      "observation_trend": "stable",
+      "evidence_examples": [
+        {
+          "source_id": "U10009",
+          "date": "2026-02-08T08:40:00",
+          "source_type": "review",
+          "raw_input": "Several buyers mention unusually long delivery times this week; one said the order remained at the regional hub for days.",
+          "signal": "delivery_times_longer_than_usual",
+          "evidence": "Several buyers mention unusually long delivery times this week; one said the order remained at the regional hub for days."
+        },
+        {
+          "source_id": "U10001",
+          "date": "2026-02-09T08:41:00",
+          "source_type": "ticket",
+          "raw_input": "Order 91567 for EL-101 was dispatched but has not moved from MH-Pune for 7 days. Support said the regional outbound queue is backed up.",
+          "signal": "outbound_queue_backup",
+          "evidence": "Order 91567 for EL-101 was dispatched but has not moved from MH-Pune for 7 days. Support said the regional outbound queue is backed up."
+        },
+        {
+          "source_id": "U10023",
+          "date": "2026-02-09T13:12:00",
+          "source_type": "news",
+          "raw_input": "Parcel operators reported temporary capacity constraints affecting outbound movement through the Maharashtra corridor. The disruption is expected to be short-lived.",
+          "signal": "Outbound shipment delay",
+          "evidence": "Parcel operators reported temporary capacity constraints affecting outbound movement through the Maharashtra corridor. The disruption is expected to be short-lived."
+        },
+        {
+          "source_id": "U10007",
+          "date": "2026-02-09T15:14:00",
+          "source_type": "ticket",
+          "raw_input": "Order 88130 for EL-101 was dispatched but has not moved from MH-Pune for 4 days. Support said the regional outbound queue is backed up.",
+          "signal": "outbound_queue_backup",
+          "evidence": "Order 88130 for EL-101 was dispatched but has not moved from MH-Pune for 4 days. Support said the regional outbound queue is backed up."
+        },
+        {
+          "source_id": "U10012",
+          "date": "2026-02-09T20:05:00",
+          "source_type": "review",
+          "raw_input": "Several buyers mention unusually long delivery times this week; one said the order remained at the regional hub for days.",
+          "signal": "delayed_delivery",
+          "evidence": "Several buyers mention unusually long delivery times this week; one said the order remained at the regional hub for days."
+        },
+        {
+          "source_id": "U10020",
+          "date": "2026-02-10T09:39:00",
+          "source_type": "slack",
+          "raw_input": "Ops update: MH-Pune backlog is now 377 orders above normal. Carrier pickup capacity is constrained; average handoff time is about 3.9 days.",
+          "signal": "backlog",
+          "evidence": "MH-Pune backlog is now 377 orders above normal. Carrier pickup capacity is constrained; average handoff time is about 3.9 days."
+        },
+        {
+          "source_id": "U10004",
+          "date": "2026-02-10T20:29:00",
+          "source_type": "ticket",
+          "raw_input": "Order 93250 for EL-101 was dispatched but has not moved from MH-Pune for 6 days. Support said the regional outbound queue is backed up.",
+          "signal": "outbound_queue_backup",
+          "evidence": "Order 93250 for EL-101 was dispatched but has not moved from MH-Pune for 6 days. Support said the regional outbound queue is backed up."
+        },
+        {
+          "source_id": "U10022",
+          "date": "2026-02-11T10:48:00",
+          "source_type": "news",
+          "raw_input": "Parcel operators reported temporary capacity constraints affecting outbound movement through the Maharashtra corridor. The disruption is expected to be short-lived.",
+          "signal": "Outbound shipment delay",
+          "evidence": "Parcel operators reported temporary capacity constraints affecting outbound movement through the Maharashtra corridor. The disruption is expected to be short-lived."
+        },
+        {
+          "source_id": "U10002",
+          "date": "2026-02-12T12:43:00",
+          "source_type": "ticket",
+          "raw_input": "Customer requested cancellation after a delivery estimate slipped by 6 days. Tracking still shows the parcel at MH-Pune.",
+          "signal": "delivery_estimate_slippage",
+          "evidence": "Customer requested cancellation after a delivery estimate slipped by 6 days. Tracking still shows the parcel at MH-Pune."
+        },
+        {
+          "source_id": "U10017",
+          "date": "2026-02-12T14:05:00",
+          "source_type": "slack",
+          "raw_input": "Ops update: MH-Pune backlog is now 474 orders above normal. Carrier pickup capacity is constrained; average handoff time is about 4.0 days.",
+          "signal": "backlog",
+          "evidence": "MH-Pune backlog is now 474 orders above normal. Carrier pickup capacity is constrained; average handoff time is about 4.0 days."
+        }
+      ]
+    },
+    {
+      "signal_theme": "website_outage",
+      "region": "Gujarat",
+      "product_category": "Home & Kitchen",
+      "observation_count": 24,
+      "date_range": {
+        "start": "2026-02-10",
+        "end": "2026-02-20"
+      },
+      "source_distribution": {
+        "news": 4,
+        "social": 7,
+        "ticket": 7,
+        "slack": 6
+      },
+      "channel_distribution": {
+        "external": 4,
+        "social": 7,
+        "customer_support": 7,
+        "internal": 6
+      },
+      "severity_distribution": {
+        "low": 4,
+        "medium": 3,
+        "high": 1
+      },
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-02-10": 2,
+        "2026-02-11": 1,
+        "2026-02-12": 2,
+        "2026-02-14": 4,
+        "2026-02-15": 4,
+        "2026-02-16": 4,
+        "2026-02-18": 2,
+        "2026-02-19": 1,
+        "2026-02-20": 4
+      },
+      "observation_trend": "increasing",
+      "evidence_examples": [
+        {
+          "source_id": "U10240",
+          "date": "2026-02-10T13:09:00",
+          "source_type": "news",
+          "raw_input": "The retailer experienced a short-lived checkout incident affecting some customers in Gujarat.",
+          "signal": "checkout_incident",
+          "evidence": "The retailer experienced a short-lived checkout incident affecting some customers in Gujarat."
+        },
+        {
+          "source_id": "U10230",
+          "date": "2026-02-10T18:25:00",
+          "source_type": "social",
+          "raw_input": "Is anyone else unable to complete checkout in Gujarat? The site keeps failing after payment.",
+          "signal": "checkout_failure",
+          "evidence": "The site keeps failing after payment."
+        },
+        {
+          "source_id": "U10217",
+          "date": "2026-02-11T13:20:00",
+          "source_type": "ticket",
+          "raw_input": "Customer reports repeated checkout failures in Gujarat; product pages load, but payment submission errors out.",
+          "signal": "checkout_failure",
+          "evidence": "Customer reports repeated checkout failures in Gujarat; product pages load, but payment submission errors out."
+        },
+        {
+          "source_id": "U10221",
+          "date": "2026-02-12T09:08:00",
+          "source_type": "ticket",
+          "raw_input": "Customer reports repeated checkout failures in Gujarat; product pages load, but payment submission errors out.",
+          "signal": "checkout_failure",
+          "evidence": "Customer reports repeated checkout failures in Gujarat; product pages load, but payment submission errors out."
+        },
+        {
+          "source_id": "U10229",
+          "date": "2026-02-12T16:19:00",
+          "source_type": "social",
+          "raw_input": "Browsing works, but checkout appears broken for several users.",
+          "signal": "checkout_broken",
+          "evidence": "Browsing works, but checkout appears broken for several users."
+        },
+        {
+          "source_id": "U10226",
+          "date": "2026-02-14T16:07:00",
+          "source_type": "social",
+          "raw_input": "Is anyone else unable to complete checkout in Gujarat? The site keeps failing after payment.",
+          "signal": "checkout_failure",
+          "evidence": "The site keeps failing after payment."
+        },
+        {
+          "source_id": "U10239",
+          "date": "2026-02-14T16:08:00",
+          "source_type": "news",
+          "raw_input": "The retailer experienced a short-lived checkout incident affecting some customers in Gujarat.",
+          "signal": "checkout_incident",
+          "evidence": "The retailer experienced a short-lived checkout incident affecting some customers in Gujarat."
+        },
+        {
+          "source_id": "U10235",
+          "date": "2026-02-14T18:26:00",
+          "source_type": "slack",
+          "raw_input": "Incident update: checkout error rate in Gujarat peaked at 25% between 11:00 and 19:00.",
+          "signal": "checkout_error_rate",
+          "evidence": "checkout error rate in Gujarat peaked at 25% between 11:00 and 19:00"
+        },
+        {
+          "source_id": "U10220",
+          "date": "2026-02-14T19:52:00",
+          "source_type": "ticket",
+          "raw_input": "Several customers say they can browse Home & Kitchen but cannot complete checkout.",
+          "signal": "checkout_failure",
+          "evidence": "Several customers say they can browse Home & Kitchen but cannot complete checkout."
+        },
+        {
+          "source_id": "U10225",
+          "date": "2026-02-15T09:04:00",
+          "source_type": "social",
+          "raw_input": "Is anyone else unable to complete checkout in Gujarat? The site keeps failing after payment.",
+          "signal": "checkout_failure",
+          "evidence": "The site keeps failing after payment."
+        }
+      ]
+    },
+    {
+      "signal_theme": "quality",
+      "region": "Maharashtra",
+      "product_category": "Beauty",
+      "observation_count": 24,
+      "date_range": {
+        "start": "2026-02-25",
+        "end": "2026-03-07"
+      },
+      "source_distribution": {
+        "review": 7,
+        "social": 4,
+        "slack": 6,
+        "ticket": 7
+      },
+      "channel_distribution": {
+        "review": 7,
+        "social": 4,
+        "internal": 6,
+        "customer_support": 7
+      },
+      "severity_distribution": {
+        "low": 11,
+        "medium": 11
+      },
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-02-25": 1,
+        "2026-02-26": 2,
+        "2026-02-27": 3,
+        "2026-02-28": 3,
+        "2026-03-01": 3,
+        "2026-03-02": 2,
+        "2026-03-03": 1,
+        "2026-03-04": 4,
+        "2026-03-05": 1,
+        "2026-03-06": 1,
+        "2026-03-07": 3
+      },
+      "observation_trend": "stable",
+      "evidence_examples": [
+        {
+          "source_id": "U10201",
+          "date": "2026-02-25T08:35:00",
+          "source_type": "review",
+          "raw_input": "The latest batch seems less reliable; I experienced the same issue described by other buyers.",
+          "signal": "product_reliability_issue",
+          "evidence": "The latest batch seems less reliable; I experienced the same issue described by other buyers."
+        },
+        {
+          "source_id": "U10205",
+          "date": "2026-02-26T16:02:00",
+          "source_type": "social",
+          "raw_input": "People are starting to discuss a recurring defect in this Beauty product.",
+          "signal": "product_defect",
+          "evidence": "People are starting to discuss a recurring defect in this Beauty product."
+        },
+        {
+          "source_id": "U10214",
+          "date": "2026-02-26T17:24:00",
+          "source_type": "slack",
+          "raw_input": "Customer experience reports a cluster of complaints tied to the latest BE-120 production batch.",
+          "signal": "product_quality_complaint",
+          "evidence": "Customer experience reports a cluster of complaints tied to the latest BE-120 production batch."
+        },
+        {
+          "source_id": "U10191",
+          "date": "2026-02-27T08:28:00",
+          "source_type": "ticket",
+          "raw_input": "Multiple customers report a similar defect on BE-120; one batch appears to have a loose component and return requests are increasing.",
+          "signal": "product_defect",
+          "evidence": "Multiple customers report a similar defect on BE-120; one batch appears to have a loose component and return requests are increasing."
+        },
+        {
+          "source_id": "U10213",
+          "date": "2026-02-27T12:04:00",
+          "source_type": "slack",
+          "raw_input": "Quality team flagged an elevated defect rate for BE-120. Returns for this SKU are above normal and a batch review is underway.",
+          "signal": "elevated defect rate",
+          "evidence": "Quality team flagged an elevated defect rate for BE-120. Returns for this SKU are above normal and a batch review is underway."
+        },
+        {
+          "source_id": "U10192",
+          "date": "2026-02-27T15:09:00",
+          "source_type": "ticket",
+          "raw_input": "Multiple customers report a similar defect on BE-120; one batch appears to have a loose component and return requests are increasing.",
+          "signal": "product_defect",
+          "evidence": "Multiple customers report a similar defect on BE-120; one batch appears to have a loose component and return requests are increasing."
+        },
+        {
+          "source_id": "U10202",
+          "date": "2026-02-28T12:41:00",
+          "source_type": "review",
+          "raw_input": "The latest batch seems less reliable; I experienced the same issue described by other buyers.",
+          "signal": "product_reliability_issue",
+          "evidence": "The latest batch seems less reliable; I experienced the same issue described by other buyers."
+        },
+        {
+          "source_id": "U10211",
+          "date": "2026-02-28T17:24:00",
+          "source_type": "slack",
+          "raw_input": "Quality team flagged an elevated defect rate for BE-120. Returns for this SKU are above normal and a batch review is underway.",
+          "signal": "elevated defect rate",
+          "evidence": "Quality team flagged an elevated defect rate for BE-120. Returns for this SKU are above normal and a batch review is underway."
+        },
+        {
+          "source_id": "U10216",
+          "date": "2026-02-28T18:15:00",
+          "source_type": "slack",
+          "raw_input": "Quality team flagged an elevated defect rate for BE-120. Returns for this SKU are above normal and a batch review is underway.",
+          "signal": "elevated defect rate",
+          "evidence": "Quality team flagged an elevated defect rate for BE-120. Returns for this SKU are above normal and a batch review is underway."
+        },
+        {
+          "source_id": "U10199",
+          "date": "2026-03-01T08:22:00",
+          "source_type": "review",
+          "raw_input": "The latest batch seems less reliable; I experienced the same issue described by other buyers.",
+          "signal": "product_reliability_issue",
+          "evidence": "The latest batch seems less reliable; I experienced the same issue described by other buyers."
+        }
+      ]
+    },
+    {
+      "signal_theme": "paid_campaign",
+      "region": "Karnataka",
+      "product_category": "Beauty",
+      "observation_count": 24,
+      "date_range": {
+        "start": "2026-03-01",
+        "end": "2026-03-10"
+      },
+      "source_distribution": {
+        "social": 7,
+        "news": 4,
+        "review": 7,
+        "slack": 6
+      },
+      "channel_distribution": {
+        "social": 7,
+        "external": 4,
+        "review": 7,
+        "internal": 6
+      },
+      "severity_distribution": {},
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-03-01": 2,
+        "2026-03-02": 1,
+        "2026-03-03": 3,
+        "2026-03-04": 2,
+        "2026-03-05": 3,
+        "2026-03-06": 3,
+        "2026-03-07": 2,
+        "2026-03-08": 2,
+        "2026-03-09": 3,
+        "2026-03-10": 3
+      },
+      "observation_trend": "stable",
+      "evidence_examples": [
+        {
+          "source_id": "U10037",
+          "date": "2026-03-01T08:57:00",
+          "source_type": "social",
+          "raw_input": "I keep seeing the new campaign for Beauty in Karnataka; finally clicked through to the product page.",
+          "signal": null,
+          "evidence": "I keep seeing the new campaign for Beauty in Karnataka; finally clicked through to the product page."
+        },
+        {
+          "source_id": "U10046",
+          "date": "2026-03-01T13:57:00",
+          "source_type": "news",
+          "raw_input": "The retailer increased digital promotional activity in Karnataka, with a new campaign targeting Beauty.",
+          "signal": "New digital campaign launched",
+          "evidence": "The retailer increased digital promotional activity in Karnataka, with a new campaign targeting Beauty."
+        },
+        {
+          "source_id": "U10033",
+          "date": "2026-03-02T12:02:00",
+          "source_type": "social",
+          "raw_input": "The new promotion is showing up repeatedly in my feed and pushed me to check out Beauty.",
+          "signal": "promotion",
+          "evidence": "The new promotion is showing up repeatedly in my feed and pushed me to check out Beauty."
+        },
+        {
+          "source_id": "U10036",
+          "date": "2026-03-03T10:09:00",
+          "source_type": "social",
+          "raw_input": "I keep seeing the new campaign for Beauty in Karnataka; finally clicked through to the product page.",
+          "signal": null,
+          "evidence": "I keep seeing the new campaign for Beauty in Karnataka; finally clicked through to the product page."
+        },
+        {
+          "source_id": "U10029",
+          "date": "2026-03-03T14:46:00",
+          "source_type": "review",
+          "raw_input": "The promotional offer was the reason I decided to try this product.",
+          "signal": "promotional offer",
+          "evidence": "The promotional offer was the reason I decided to try this product."
+        },
+        {
+          "source_id": "U10034",
+          "date": "2026-03-03T17:17:00",
+          "source_type": "social",
+          "raw_input": "The new promotion is showing up repeatedly in my feed and pushed me to check out Beauty.",
+          "signal": "promotion",
+          "evidence": "The new promotion is showing up repeatedly in my feed and pushed me to check out Beauty."
+        },
+        {
+          "source_id": "U10031",
+          "date": "2026-03-04T14:41:00",
+          "source_type": "review",
+          "raw_input": "I purchased this Beauty after seeing the new online campaign several times this week.",
+          "signal": "New online campaign",
+          "evidence": "I purchased this Beauty after seeing the new online campaign several times this week."
+        },
+        {
+          "source_id": "U10026",
+          "date": "2026-03-04T19:59:00",
+          "source_type": "review",
+          "raw_input": "The promotional offer was the reason I decided to try this product.",
+          "signal": "promotional offer",
+          "evidence": "The promotional offer was the reason I decided to try this product."
+        },
+        {
+          "source_id": "U10040",
+          "date": "2026-03-05T15:11:00",
+          "source_type": "slack",
+          "raw_input": "Marketing reports a large reach increase for CAMP-GT002; the team expects incremental demand for Beauty this week.",
+          "signal": "CAMP-GT002",
+          "evidence": "Marketing reports a large reach increase for CAMP-GT002; the team expects incremental demand for Beauty this week."
+        },
+        {
+          "source_id": "U10045",
+          "date": "2026-03-05T15:29:00",
+          "source_type": "news",
+          "raw_input": "A new digital campaign is receiving substantially more reach than the retailer's prior campaign in the region.",
+          "signal": "new digital campaign",
+          "evidence": "A new digital campaign is receiving substantially more reach than the retailer's prior campaign in the region."
+        }
+      ]
+    },
+    {
+      "signal_theme": "paid_campaign",
+      "region": "Delhi NCR",
+      "product_category": "Apparel",
+      "observation_count": 24,
+      "date_range": {
+        "start": "2026-03-05",
+        "end": "2026-03-14"
+      },
+      "source_distribution": {
+        "social": 7,
+        "review": 7,
+        "slack": 6,
+        "news": 4
+      },
+      "channel_distribution": {
+        "social": 7,
+        "review": 7,
+        "internal": 6,
+        "external": 4
+      },
+      "severity_distribution": {},
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-03-05": 1,
+        "2026-03-06": 1,
+        "2026-03-07": 3,
+        "2026-03-08": 4,
+        "2026-03-09": 5,
+        "2026-03-10": 1,
+        "2026-03-11": 2,
+        "2026-03-12": 2,
+        "2026-03-13": 1,
+        "2026-03-14": 4
+      },
+      "observation_trend": "decreasing",
+      "evidence_examples": [
+        {
+          "source_id": "U10251",
+          "date": "2026-03-05T20:42:00",
+          "source_type": "social",
+          "raw_input": "I saw the sponsored offer several times and ended up purchasing the product.",
+          "signal": "Sponsored offer",
+          "evidence": "I saw the sponsored offer several times and ended up purchasing the product."
+        },
+        {
+          "source_id": "U10243",
+          "date": "2026-03-06T20:24:00",
+          "source_type": "review",
+          "raw_input": "I first noticed this product through the retailer's sponsored campaign.",
+          "signal": "sponsored campaign",
+          "evidence": "I first noticed this product through the retailer's sponsored campaign."
+        },
+        {
+          "source_id": "U10255",
+          "date": "2026-03-07T08:05:00",
+          "source_type": "slack",
+          "raw_input": "Campaign CAMP-GT011 is live in Delhi NCR. Paid impressions are up materially and the team is seeing higher click-through rates.",
+          "signal": "CAMP-GT011",
+          "evidence": "Campaign CAMP-GT011 is live in Delhi NCR. Paid impressions are up materially and the team is seeing higher click-through rates."
+        },
+        {
+          "source_id": "U10241",
+          "date": "2026-03-07T12:31:00",
+          "source_type": "review",
+          "raw_input": "I first noticed this product through the retailer's sponsored campaign.",
+          "signal": "sponsored campaign",
+          "evidence": "I first noticed this product through the retailer's sponsored campaign."
+        },
+        {
+          "source_id": "U10248",
+          "date": "2026-03-07T19:47:00",
+          "source_type": "social",
+          "raw_input": "The sponsored campaign for Apparel has been appearing frequently in my feed and led me to click through.",
+          "signal": "sponsored campaign",
+          "evidence": "The sponsored campaign for Apparel has been appearing frequently in my feed and led me to click through."
+        },
+        {
+          "source_id": "U10244",
+          "date": "2026-03-08T09:49:00",
+          "source_type": "review",
+          "raw_input": "The promotion I saw online was what convinced me to try this product.",
+          "signal": "Promotion",
+          "evidence": "The promotion I saw online was what convinced me to try this product."
+        },
+        {
+          "source_id": "U10259",
+          "date": "2026-03-08T13:55:00",
+          "source_type": "slack",
+          "raw_input": "Performance report: CAMP-GT011 increased paid traffic and conversions for Apparel; organic traffic is broadly unchanged.",
+          "signal": "CAMP-GT011",
+          "evidence": "CAMP-GT011 increased paid traffic and conversions for Apparel"
+        },
+        {
+          "source_id": "U10247",
+          "date": "2026-03-08T16:53:00",
+          "source_type": "review",
+          "raw_input": "The promotion I saw online was what convinced me to try this product.",
+          "signal": "Promotion",
+          "evidence": "The promotion I saw online was what convinced me to try this product."
+        },
+        {
+          "source_id": "U10257",
+          "date": "2026-03-08T16:55:00",
+          "source_type": "slack",
+          "raw_input": "Performance report: CAMP-GT011 increased paid traffic and conversions for Apparel; organic traffic is broadly unchanged.",
+          "signal": "CAMP-GT011",
+          "evidence": "CAMP-GT011 increased paid traffic and conversions for Apparel"
+        },
+        {
+          "source_id": "U10245",
+          "date": "2026-03-09T13:09:00",
+          "source_type": "review",
+          "raw_input": "The promotion I saw online was what convinced me to try this product.",
+          "signal": "Promotion",
+          "evidence": "The promotion I saw online was what convinced me to try this product."
+        }
+      ]
+    },
+    {
+      "signal_theme": "competitor_promo",
+      "region": "Tamil Nadu",
+      "product_category": "Beauty",
+      "observation_count": 24,
+      "date_range": {
+        "start": "2026-03-10",
+        "end": "2026-03-22"
+      },
+      "source_distribution": {
+        "news": 4,
+        "slack": 6,
+        "social": 7,
+        "review": 7
+      },
+      "channel_distribution": {
+        "external": 4,
+        "internal": 6,
+        "social": 7,
+        "review": 7
+      },
+      "severity_distribution": {},
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-03-10": 1,
+        "2026-03-11": 2,
+        "2026-03-12": 2,
+        "2026-03-13": 1,
+        "2026-03-14": 3,
+        "2026-03-15": 1,
+        "2026-03-16": 2,
+        "2026-03-17": 1,
+        "2026-03-18": 2,
+        "2026-03-19": 2,
+        "2026-03-21": 5,
+        "2026-03-22": 2
+      },
+      "observation_trend": "increasing",
+      "evidence_examples": [
+        {
+          "source_id": "U10164",
+          "date": "2026-03-10T09:07:00",
+          "source_type": "news",
+          "raw_input": "Competitive pricing has intensified in Tamil Nadu; Competitor_A is offering a deep temporary discount.",
+          "signal": "Competitor_A offering a deep temporary discount",
+          "evidence": "Competitive pricing has intensified in Tamil Nadu; Competitor_A is offering a deep temporary discount."
+        },
+        {
+          "source_id": "U10157",
+          "date": "2026-03-11T17:31:00",
+          "source_type": "slack",
+          "raw_input": "Competitive intelligence: Competitor_A promotion is active in Tamil Nadu; observed discount is around 38%.",
+          "signal": "Competitor_A promotion",
+          "evidence": "Competitor_A promotion is active in Tamil Nadu; observed discount is around 38%"
+        },
+        {
+          "source_id": "U10152",
+          "date": "2026-03-11T20:38:00",
+          "source_type": "social",
+          "raw_input": "I switched to Competitor_A this week because their Beauty offer is substantially cheaper.",
+          "signal": "Competitor_A price promotion",
+          "evidence": "I switched to Competitor_A this week because their Beauty offer is substantially cheaper."
+        },
+        {
+          "source_id": "U10163",
+          "date": "2026-03-12T12:54:00",
+          "source_type": "news",
+          "raw_input": "Competitive pricing has intensified in Tamil Nadu; Competitor_A is offering a deep temporary discount.",
+          "signal": "Competitor_A offering a deep temporary discount",
+          "evidence": "Competitive pricing has intensified in Tamil Nadu; Competitor_A is offering a deep temporary discount."
+        },
+        {
+          "source_id": "U10155",
+          "date": "2026-03-12T17:03:00",
+          "source_type": "social",
+          "raw_input": "Competitor_A is advertising roughly 35–40% off comparable Beauty products in Tamil Nadu.",
+          "signal": "Competitor_A running a promotion",
+          "evidence": "Competitor_A is advertising roughly 35–40% off comparable Beauty products in Tamil Nadu."
+        },
+        {
+          "source_id": "U10154",
+          "date": "2026-03-13T11:53:00",
+          "source_type": "social",
+          "raw_input": "I switched to Competitor_A this week because their Beauty offer is substantially cheaper.",
+          "signal": "Competitor_A price promotion",
+          "evidence": "I switched to Competitor_A this week because their Beauty offer is substantially cheaper."
+        },
+        {
+          "source_id": "U10146",
+          "date": "2026-03-14T11:07:00",
+          "source_type": "review",
+          "raw_input": "The product is fine, but Competitor_A's current deal made me choose them instead.",
+          "signal": "Competitor_A running a promotion",
+          "evidence": "Competitor_A's current deal made me choose them instead."
+        },
+        {
+          "source_id": "U10165",
+          "date": "2026-03-14T16:00:00",
+          "source_type": "news",
+          "raw_input": "Competitor_A launched an aggressive regional promotion in Tamil Nadu for Beauty.",
+          "signal": "Competitor_A launched an aggressive regional promotion in Tamil Nadu for Beauty.",
+          "evidence": "Competitor_A launched an aggressive regional promotion in Tamil Nadu for Beauty."
+        },
+        {
+          "source_id": "U10151",
+          "date": "2026-03-14T18:49:00",
+          "source_type": "social",
+          "raw_input": "Competitor_A is advertising roughly 35–40% off comparable Beauty products in Tamil Nadu.",
+          "signal": "Competitor_A running a promotion",
+          "evidence": "Competitor_A is advertising roughly 35–40% off comparable Beauty products in Tamil Nadu."
+        },
+        {
+          "source_id": "U10145",
+          "date": "2026-03-15T10:23:00",
+          "source_type": "review",
+          "raw_input": "I was ready to buy, then saw a much larger discount from Competitor_A.",
+          "signal": "Competitor_A discount",
+          "evidence": "I was ready to buy, then saw a much larger discount from Competitor_A."
+        }
+      ]
+    },
+    {
+      "signal_theme": "shipment_delay",
+      "region": "Tamil Nadu",
+      "product_category": "Electronics",
+      "observation_count": 24,
+      "date_range": {
+        "start": "2026-03-18",
+        "end": "2026-03-30"
+      },
+      "source_distribution": {
+        "news": 4,
+        "ticket": 7,
+        "review": 7,
+        "slack": 6
+      },
+      "channel_distribution": {
+        "external": 4,
+        "customer_support": 7,
+        "review": 7,
+        "internal": 6
+      },
+      "severity_distribution": {
+        "medium": 13,
+        "low": 11
+      },
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-03-18": 3,
+        "2026-03-19": 4,
+        "2026-03-21": 3,
+        "2026-03-23": 3,
+        "2026-03-24": 3,
+        "2026-03-25": 1,
+        "2026-03-26": 2,
+        "2026-03-27": 1,
+        "2026-03-28": 2,
+        "2026-03-29": 1,
+        "2026-03-30": 1
+      },
+      "observation_trend": "decreasing",
+      "evidence_examples": [
+        {
+          "source_id": "U10288",
+          "date": "2026-03-18T09:01:00",
+          "source_type": "news",
+          "raw_input": "A regional carrier notice warned of processing delays around Tamil Nadu; merchants using the affected hub may see longer delivery times.",
+          "signal": "Regional carrier notice of processing delays",
+          "evidence": "A regional carrier notice warned of processing delays around Tamil Nadu; merchants using the affected hub may see longer delivery times."
+        },
+        {
+          "source_id": "U10287",
+          "date": "2026-03-18T14:26:00",
+          "source_type": "news",
+          "raw_input": "A regional carrier notice warned of processing delays around Tamil Nadu; merchants using the affected hub may see longer delivery times.",
+          "signal": "Regional carrier notice of processing delays",
+          "evidence": "A regional carrier notice warned of processing delays around Tamil Nadu; merchants using the affected hub may see longer delivery times."
+        },
+        {
+          "source_id": "U10266",
+          "date": "2026-03-18T16:38:00",
+          "source_type": "ticket",
+          "raw_input": "Customer requested cancellation after a delivery estimate slipped by 4 days. Tracking still shows the parcel at TN-Chennai.",
+          "signal": "delivery_estimate_slippage",
+          "evidence": "Customer requested cancellation after a delivery estimate slipped by 4 days. Tracking still shows the parcel at TN-Chennai."
+        },
+        {
+          "source_id": "U10275",
+          "date": "2026-03-19T13:42:00",
+          "source_type": "review",
+          "raw_input": "The Electronics item itself is good, but delivery to Tamil Nadu took nearly twice the promised time.",
+          "signal": "Delivery delay",
+          "evidence": "Delivery to Tamil Nadu took nearly twice the promised time."
+        },
+        {
+          "source_id": "U10277",
+          "date": "2026-03-19T14:38:00",
+          "source_type": "review",
+          "raw_input": "The Electronics item itself is good, but delivery to Tamil Nadu took nearly twice the promised time.",
+          "signal": "Delivery delay",
+          "evidence": "Delivery to Tamil Nadu took nearly twice the promised time."
+        },
+        {
+          "source_id": "U10265",
+          "date": "2026-03-19T16:00:00",
+          "source_type": "ticket",
+          "raw_input": "Order 87476 for EL-101 was dispatched but has not moved from TN-Chennai for 6 days. Support said the regional outbound queue is backed up.",
+          "signal": "outbound_queue_backup",
+          "evidence": "Order 87476 for EL-101 was dispatched but has not moved from TN-Chennai for 6 days. Support said the regional outbound queue is backed up."
+        },
+        {
+          "source_id": "U10285",
+          "date": "2026-03-19T17:10:00",
+          "source_type": "news",
+          "raw_input": "A regional carrier notice warned of processing delays around Tamil Nadu; merchants using the affected hub may see longer delivery times.",
+          "signal": "Regional carrier notice of processing delays",
+          "evidence": "A regional carrier notice warned of processing delays around Tamil Nadu; merchants using the affected hub may see longer delivery times."
+        },
+        {
+          "source_id": "U10274",
+          "date": "2026-03-21T08:29:00",
+          "source_type": "review",
+          "raw_input": "Several buyers mention unusually long delivery times this week; one said the order remained at the regional hub for days.",
+          "signal": "delayed_delivery",
+          "evidence": "Several buyers mention unusually long delivery times this week; one said the order remained at the regional hub for days."
+        },
+        {
+          "source_id": "U10273",
+          "date": "2026-03-21T15:33:00",
+          "source_type": "review",
+          "raw_input": "Several buyers mention unusually long delivery times this week; one said the order remained at the regional hub for days.",
+          "signal": "delayed_delivery",
+          "evidence": "Several buyers mention unusually long delivery times this week; one said the order remained at the regional hub for days."
+        },
+        {
+          "source_id": "U10283",
+          "date": "2026-03-21T18:56:00",
+          "source_type": "slack",
+          "raw_input": "Regional dispatch queue for Electronics is elevated. We are manually prioritising older orders because the carrier is short on pickup capacity.",
+          "signal": "dispatch_queue_elevated",
+          "evidence": "Regional dispatch queue for Electronics is elevated. We are manually prioritising older orders because the carrier is short on pickup capacity."
+        }
+      ]
+    },
+    {
+      "signal_theme": "stockout",
+      "region": "Karnataka",
+      "product_category": "Electronics",
+      "observation_count": 21,
+      "date_range": {
+        "start": "2026-02-20",
+        "end": "2026-03-05"
+      },
+      "source_distribution": {
+        "review": 7,
+        "ticket": 7,
+        "news": 4,
+        "slack": 3
+      },
+      "channel_distribution": {
+        "review": 7,
+        "customer_support": 7,
+        "external": 4,
+        "internal": 3
+      },
+      "severity_distribution": {
+        "medium": 6,
+        "low": 1
+      },
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-02-20": 3,
+        "2026-02-21": 2,
+        "2026-02-22": 1,
+        "2026-02-23": 2,
+        "2026-02-24": 1,
+        "2026-02-25": 2,
+        "2026-02-27": 2,
+        "2026-02-28": 1,
+        "2026-03-01": 1,
+        "2026-03-02": 3,
+        "2026-03-03": 1,
+        "2026-03-05": 2
+      },
+      "observation_trend": "stable",
+      "evidence_examples": [
+        {
+          "source_id": "U10128",
+          "date": "2026-02-20T11:47:00",
+          "source_type": "review",
+          "raw_input": "I wanted to buy EL-204, but it has been unavailable in my area for several days.",
+          "signal": "product unavailable",
+          "evidence": "I wanted to buy EL-204, but it has been unavailable in my area for several days."
+        },
+        {
+          "source_id": "U10124",
+          "date": "2026-02-20T12:12:00",
+          "source_type": "ticket",
+          "raw_input": "EL-204 has shown out of stock in Karnataka repeatedly. Customer placed an order and it was cancelled after payment.",
+          "signal": "repeated out of stock",
+          "evidence": "EL-204 has shown out of stock in Karnataka repeatedly. Customer placed an order and it was cancelled after payment."
+        },
+        {
+          "source_id": "U10131",
+          "date": "2026-02-20T18:45:00",
+          "source_type": "review",
+          "raw_input": "The product looks good, but I could not order because it was out of stock.",
+          "signal": "out of stock",
+          "evidence": "The product looks good, but I could not order because it was out of stock."
+        },
+        {
+          "source_id": "U10130",
+          "date": "2026-02-21T16:51:00",
+          "source_type": "review",
+          "raw_input": "The product looks good, but I could not order because it was out of stock.",
+          "signal": "out of stock",
+          "evidence": "The product looks good, but I could not order because it was out of stock."
+        },
+        {
+          "source_id": "U10141",
+          "date": "2026-02-21T19:17:00",
+          "source_type": "news",
+          "raw_input": "A supplier disruption is limiting availability of selected Electronics components in the region.",
+          "signal": "component_unavailability",
+          "evidence": "A supplier disruption is limiting availability of selected Electronics components in the region."
+        },
+        {
+          "source_id": "U10127",
+          "date": "2026-02-22T10:19:00",
+          "source_type": "review",
+          "raw_input": "The product looks good, but I could not order because it was out of stock.",
+          "signal": "out of stock",
+          "evidence": "The product looks good, but I could not order because it was out of stock."
+        },
+        {
+          "source_id": "U10122",
+          "date": "2026-02-23T13:42:00",
+          "source_type": "ticket",
+          "raw_input": "Customer cannot purchase EL-204; the product page says unavailable and support has no confirmed restock date.",
+          "signal": "product_unavailable",
+          "evidence": "Customer cannot purchase EL-204; the product page says unavailable and support has no confirmed restock date."
+        },
+        {
+          "source_id": "U10125",
+          "date": "2026-02-23T19:14:00",
+          "source_type": "review",
+          "raw_input": "The product looks good, but I could not order because it was out of stock.",
+          "signal": "out of stock",
+          "evidence": "The product looks good, but I could not order because it was out of stock."
+        },
+        {
+          "source_id": "U10136",
+          "date": "2026-02-24T16:02:00",
+          "source_type": "slack",
+          "raw_input": "Inventory alert: EL-204 at KA-Bengaluru is down to roughly 6 sellable units. Supplier component shortage is delaying replenishment.",
+          "signal": "low stock",
+          "evidence": "Inventory alert: EL-204 at KA-Bengaluru is down to roughly 6 sellable units. Supplier component shortage is delaying replenishment."
+        },
+        {
+          "source_id": "U10120",
+          "date": "2026-02-25T09:49:00",
+          "source_type": "ticket",
+          "raw_input": "EL-204 has shown out of stock in Karnataka repeatedly. Customer placed an order and it was cancelled after payment.",
+          "signal": "repeated out of stock",
+          "evidence": "EL-204 has shown out of stock in Karnataka repeatedly. Customer placed an order and it was cancelled after payment."
+        }
+      ]
+    },
+    {
+      "signal_theme": "quality",
+      "region": "Tamil Nadu",
+      "product_category": "Apparel",
+      "observation_count": 11,
+      "date_range": {
+        "start": "2026-02-15",
+        "end": "2026-02-25"
+      },
+      "source_distribution": {
+        "ticket": 4,
+        "social": 3,
+        "review": 4
+      },
+      "channel_distribution": {
+        "customer_support": 4,
+        "social": 3,
+        "review": 4
+      },
+      "severity_distribution": {
+        "low": 11
+      },
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-02-15": 1,
+        "2026-02-17": 1,
+        "2026-02-19": 1,
+        "2026-02-20": 2,
+        "2026-02-21": 1,
+        "2026-02-22": 2,
+        "2026-02-23": 1,
+        "2026-02-24": 1,
+        "2026-02-25": 1
+      },
+      "observation_trend": "stable",
+      "evidence_examples": [
+        {
+          "source_id": "U10051",
+          "date": "2026-02-15T09:58:00",
+          "source_type": "ticket",
+          "raw_input": "Customer says the product is usable but has a minor finish/stitching issue. They also mention a cheaper alternative elsewhere.",
+          "signal": "product_defect",
+          "evidence": "Customer says the product is usable but has a minor finish/stitching issue."
+        },
+        {
+          "source_id": "U10064",
+          "date": "2026-02-17T20:01:00",
+          "source_type": "social",
+          "raw_input": "Seeing some mixed comments about Apparel quality in Tamil Nadu, but nothing looks widespread yet.",
+          "signal": "product_quality_complaint",
+          "evidence": "Seeing some mixed comments about Apparel quality in Tamil Nadu, but nothing looks widespread yet."
+        },
+        {
+          "source_id": "U10057",
+          "date": "2026-02-19T14:04:00",
+          "source_type": "review",
+          "raw_input": "Not a serious quality problem, but I noticed a minor issue with the Apparel product.",
+          "signal": "minor_quality_issue",
+          "evidence": "Not a serious quality problem, but I noticed a minor issue with the Apparel product."
+        },
+        {
+          "source_id": "U10059",
+          "date": "2026-02-20T14:56:00",
+          "source_type": "review",
+          "raw_input": "Not a serious quality problem, but I noticed a minor issue with the Apparel product.",
+          "signal": "minor_quality_issue",
+          "evidence": "Not a serious quality problem, but I noticed a minor issue with the Apparel product."
+        },
+        {
+          "source_id": "U10050",
+          "date": "2026-02-20T17:07:00",
+          "source_type": "ticket",
+          "raw_input": "Customer says the product is usable but has a minor finish/stitching issue. They also mention a cheaper alternative elsewhere.",
+          "signal": "product_defect",
+          "evidence": "Customer says the product is usable but has a minor finish/stitching issue."
+        },
+        {
+          "source_id": "U10056",
+          "date": "2026-02-21T20:56:00",
+          "source_type": "review",
+          "raw_input": "Not a serious quality problem, but I noticed a minor issue with the Apparel product.",
+          "signal": "minor_quality_issue",
+          "evidence": "Not a serious quality problem, but I noticed a minor issue with the Apparel product."
+        },
+        {
+          "source_id": "U10052",
+          "date": "2026-02-22T15:05:00",
+          "source_type": "ticket",
+          "raw_input": "Customer says the product is usable but has a minor finish/stitching issue. They also mention a cheaper alternative elsewhere.",
+          "signal": "product_defect",
+          "evidence": "Customer says the product is usable but has a minor finish/stitching issue."
+        },
+        {
+          "source_id": "U10053",
+          "date": "2026-02-22T20:30:00",
+          "source_type": "ticket",
+          "raw_input": "Customer says the product is usable but has a minor finish/stitching issue. They also mention a cheaper alternative elsewhere.",
+          "signal": "product_defect",
+          "evidence": "Customer says the product is usable but has a minor finish/stitching issue."
+        },
+        {
+          "source_id": "U10058",
+          "date": "2026-02-23T16:53:00",
+          "source_type": "review",
+          "raw_input": "Not a serious quality problem, but I noticed a minor issue with the Apparel product.",
+          "signal": "minor_quality_issue",
+          "evidence": "Not a serious quality problem, but I noticed a minor issue with the Apparel product."
+        },
+        {
+          "source_id": "U10069",
+          "date": "2026-02-24T08:24:00",
+          "source_type": "social",
+          "raw_input": "Seeing some mixed comments about Apparel quality in Tamil Nadu, but nothing looks widespread yet.",
+          "signal": "product_quality_complaint",
+          "evidence": "Seeing some mixed comments about Apparel quality in Tamil Nadu, but nothing looks widespread yet."
+        }
+      ]
+    },
+    {
+      "signal_theme": "price_increase",
+      "region": "Tamil Nadu",
+      "product_category": "Apparel",
+      "observation_count": 4,
+      "date_range": {
+        "start": "2026-02-20",
+        "end": "2026-02-26"
+      },
+      "source_distribution": {
+        "news": 4
+      },
+      "channel_distribution": {
+        "external": 4
+      },
+      "severity_distribution": {},
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-02-20": 1,
+        "2026-02-24": 1,
+        "2026-02-26": 2
+      },
+      "observation_trend": "insufficient_data",
+      "evidence_examples": [
+        {
+          "source_id": "U10072",
+          "date": "2026-02-20T10:56:00",
+          "source_type": "news",
+          "raw_input": "Competitive pricing in Apparel appears somewhat more aggressive this period, although no major market disruption is reported.",
+          "signal": "Competitive pricing in Apparel appears somewhat more aggressive",
+          "evidence": "Competitive pricing in Apparel appears somewhat more aggressive this period, although no major market disruption is reported."
+        },
+        {
+          "source_id": "U10073",
+          "date": "2026-02-24T16:12:00",
+          "source_type": "news",
+          "raw_input": "Competitive pricing in Apparel appears somewhat more aggressive this period, although no major market disruption is reported.",
+          "signal": "Competitive pricing in Apparel appears somewhat more aggressive",
+          "evidence": "Competitive pricing in Apparel appears somewhat more aggressive this period, although no major market disruption is reported."
+        },
+        {
+          "source_id": "U10070",
+          "date": "2026-02-26T15:10:00",
+          "source_type": "news",
+          "raw_input": "Competitive pricing in Apparel appears somewhat more aggressive this period, although no major market disruption is reported.",
+          "signal": null,
+          "evidence": "Competitive pricing in Apparel appears somewhat more aggressive this period"
+        },
+        {
+          "source_id": "U10071",
+          "date": "2026-02-26T19:51:00",
+          "source_type": "news",
+          "raw_input": "Competitive pricing in Apparel appears somewhat more aggressive this period, although no major market disruption is reported.",
+          "signal": "Competitor pricing",
+          "evidence": "Competitive pricing in Apparel appears somewhat more aggressive this period"
+        }
+      ]
+    },
+    {
+      "signal_theme": "shipment_delay",
+      "region": "Karnataka",
+      "product_category": "Electronics",
+      "observation_count": 3,
+      "date_range": {
+        "start": "2026-02-20",
+        "end": "2026-03-04"
+      },
+      "source_distribution": {
+        "slack": 3
+      },
+      "channel_distribution": {
+        "internal": 3
+      },
+      "severity_distribution": {
+        "medium": 3
+      },
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-02-20": 1,
+        "2026-03-03": 1,
+        "2026-03-04": 1
+      },
+      "observation_trend": "insufficient_data",
+      "evidence_examples": [
+        {
+          "source_id": "U10137",
+          "date": "2026-02-20T10:41:00",
+          "source_type": "slack",
+          "raw_input": "Supply planning says the next inbound shipment for EL-204 is late because a component is unavailable. Sellable inventory is nearly exhausted.",
+          "signal": "Inbound shipment delay",
+          "evidence": "Supply planning says the next inbound shipment for EL-204 is late because a component is unavailable. Sellable inventory is nearly exhausted."
+        },
+        {
+          "source_id": "U10133",
+          "date": "2026-03-03T14:30:00",
+          "source_type": "slack",
+          "raw_input": "Supply planning says the next inbound shipment for EL-204 is late because a component is unavailable. Sellable inventory is nearly exhausted.",
+          "signal": "Inbound shipment delay",
+          "evidence": "Supply planning says the next inbound shipment for EL-204 is late because a component is unavailable. Sellable inventory is nearly exhausted."
+        },
+        {
+          "source_id": "U10132",
+          "date": "2026-03-04T16:19:00",
+          "source_type": "slack",
+          "raw_input": "Supply planning says the next inbound shipment for EL-204 is late because a component is unavailable. Sellable inventory is nearly exhausted.",
+          "signal": "Inbound shipment delay",
+          "evidence": "Supply planning says the next inbound shipment for EL-204 is late because a component is unavailable. Sellable inventory is nearly exhausted."
+        }
+      ]
+    },
+    {
+      "signal_theme": "sparse_history",
+      "region": "Delhi NCR",
+      "product_category": "Home & Kitchen",
+      "observation_count": 3,
+      "date_range": {
+        "start": "2026-03-17",
+        "end": "2026-03-30"
+      },
+      "source_distribution": {
+        "slack": 3
+      },
+      "channel_distribution": {
+        "internal": 3
+      },
+      "severity_distribution": {},
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-03-17": 1,
+        "2026-03-18": 1,
+        "2026-03-30": 1
+      },
+      "observation_trend": "insufficient_data",
+      "evidence_examples": [
+        {
+          "source_id": "U10086",
+          "date": "2026-03-17T16:54:00",
+          "source_type": "slack",
+          "raw_input": "New Home & Kitchen line launched in Delhi NCR; this product family has no comparable pre-launch history in the current dataset.",
+          "signal": null,
+          "evidence": "this product family has no comparable pre-launch history in the current dataset."
+        },
+        {
+          "source_id": "U10083",
+          "date": "2026-03-18T16:44:00",
+          "source_type": "slack",
+          "raw_input": "New Home & Kitchen line launched in Delhi NCR; this product family has no comparable pre-launch history in the current dataset.",
+          "signal": null,
+          "evidence": "this product family has no comparable pre-launch history in the current dataset."
+        },
+        {
+          "source_id": "U10084",
+          "date": "2026-03-30T17:38:00",
+          "source_type": "slack",
+          "raw_input": "New Home & Kitchen line launched in Delhi NCR; this product family has no comparable pre-launch history in the current dataset.",
+          "signal": null,
+          "evidence": "this product family has no comparable pre-launch history in the current dataset."
+        }
+      ]
+    },
+    {
+      "signal_theme": "quality",
+      "region": "Karnataka",
+      "product_category": "Home & Kitchen",
+      "observation_count": 1,
+      "date_range": {
+        "start": "2026-01-24",
+        "end": "2026-01-24"
+      },
+      "source_distribution": {
+        "social": 1
+      },
+      "channel_distribution": {
+        "social": 1
+      },
+      "severity_distribution": {
+        "low": 1
+      },
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-01-24": 1
+      },
+      "observation_trend": "insufficient_data",
+      "evidence_examples": [
+        {
+          "source_id": "U10338",
+          "date": "2026-01-24T20:13:00",
+          "source_type": "social",
+          "raw_input": "Customer likes the product quality and did not report any delivery problem.",
+          "signal": "positive_customer_feedback",
+          "evidence": "Customer likes the product quality and did not report any delivery problem."
+        }
+      ]
+    },
+    {
+      "signal_theme": "quality",
+      "region": "Gujarat",
+      "product_category": "Home & Kitchen",
+      "observation_count": 1,
+      "date_range": {
+        "start": "2026-03-04",
+        "end": "2026-03-04"
+      },
+      "source_distribution": {
+        "social": 1
+      },
+      "channel_distribution": {
+        "social": 1
+      },
+      "severity_distribution": {
+        "low": 1
+      },
+      "tag_counts": {},
+      "daily_observation_counts": {
+        "2026-03-04": 1
+      },
+      "observation_trend": "insufficient_data",
+      "evidence_examples": [
+        {
+          "source_id": "U10345",
+          "date": "2026-03-04T16:00:00",
+          "source_type": "social",
+          "raw_input": "Customer likes the product quality and did not report any delivery problem.",
+          "signal": "positive_customer_feedback",
+          "evidence": "Customer likes the product quality and did not report any delivery problem."
+        }
+      ]
+    }
+  ]
+}
